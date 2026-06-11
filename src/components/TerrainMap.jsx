@@ -1,13 +1,10 @@
 import { useRef, useState, useEffect, useCallback } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { Text, OrbitControls } from '@react-three/drei'
-import * as THREE from 'three'
 
 // ─── Config ───────────────────────────────────────────────────────────
 const ZONES = [
   {
     id: 'A',
-    position: [-5, 0, -5],
+    position: { x: 28, y: 30 },   // % positions for top-down view
     color: '#e74c3c',
     label: 'A',
     title: 'Zona de lápidas antiguas',
@@ -18,7 +15,7 @@ const ZONES = [
   },
   {
     id: 'B',
-    position: [5, 0, -5],
+    position: { x: 68, y: 28 },
     color: '#3498db',
     label: 'B',
     title: 'Área de mausoleos',
@@ -29,7 +26,7 @@ const ZONES = [
   },
   {
     id: 'C',
-    position: [-5, 0, 5],
+    position: { x: 25, y: 68 },
     color: '#f39c12',
     label: 'C',
     title: 'Jardín memorial',
@@ -40,7 +37,7 @@ const ZONES = [
   },
   {
     id: 'D',
-    position: [5, 0, 5],
+    position: { x: 70, y: 70 },
     color: '#9b59b6',
     label: 'D',
     title: 'Servicios administrativos',
@@ -51,105 +48,20 @@ const ZONES = [
   },
 ]
 
-// ─── 3D Components ─────────────────────────────────────────────────────
-
-function Terrain() {
-  return (
-    <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} receiveShadow>
-      <planeGeometry args={[20, 20, 32, 32]} />
-      <meshStandardMaterial color="#4a7c59" wireframe={false} />
-    </mesh>
-  )
-}
-
-function GridLines() {
-  return (
-    <gridHelper args={[20, 20, '#2d5a3d', '#2d5a3d']} position={[0, 0.01, 0]} />
-  )
-}
-
-function HoverCircle({ zone, onHover }) {
-  const meshRef = useRef()
-  const [hovered, setHovered] = useState(false)
-
-  useFrame((state) => {
-    if (hovered) {
-      meshRef.current.position.y = 0.35 + Math.sin(state.clock.elapsedTime * 3) * 0.1
-    } else {
-      meshRef.current.position.y = 0.15
-    }
-  })
-
-  return (
-    <group position={zone.position}>
-      <mesh
-        ref={meshRef}
-        onPointerOver={(e) => { e.stopPropagation(); setHovered(true); onHover(zone) }}
-        onPointerOut={() => setHovered(false)}
-        position={[0, 0.15, 0]}
-      >
-        <cylinderGeometry args={[0.85, 0.85, 0.12, 32]} />
-        <meshStandardMaterial
-          color={hovered ? zone.color : '#8b4513'}
-          emissive={hovered ? zone.color : '#000000'}
-          emissiveIntensity={hovered ? 0.6 : 0}
-        />
-      </mesh>
-      <mesh position={[0, 0.05, 0]}>
-        <cylinderGeometry args={[0.95, 1.05, 0.05, 32]} />
-        <meshStandardMaterial color="#654321" />
-      </mesh>
-      <Text
-        position={[0, 0.55, 0]}
-        fontSize={0.32}
-        color="white"
-        anchorX="center"
-        anchorY="middle"
-        outlineWidth={0.025}
-        outlineColor="#000000"
-      >
-        {zone.label}
-      </Text>
-    </group>
-  )
-}
-
-function Scene({ onHover }) {
-  return (
-    <>
-      <ambientLight intensity={0.7} />
-      <directionalLight position={[10, 12, 5]} intensity={1.2} castShadow />
-      <pointLight position={[-8, 5, -8]} intensity={0.4} color="#fffae6" />
-      <pointLight position={[8, 5, 8]} intensity={0.3} color="#e6f0ff" />
-      <fog attach="fog" args={['#1a1a2e', 25, 50]} />
-      <Terrain />
-      <GridLines />
-      {ZONES.map(zone => (
-        <HoverCircle key={zone.id} zone={zone} onHover={onHover} />
-      ))}
-    </>
-  )
-}
-
 // ─── 360 Viewer (vanilla Pannellum) ────────────────────────────────────
 
-function PanoramaViewer({ zone, onNavigate }) {
+function PanoramaViewer({ zone, onNavigate, onExit }) {
   const containerRef = useRef()
   const viewerRef = useRef(null)
 
   useEffect(() => {
     if (!containerRef.current) return
-
-    // Destroy previous viewer
     if (viewerRef.current) {
       try { viewerRef.current.destroy() } catch (e) {}
       viewerRef.current = null
     }
-
-    // Clear container
     containerRef.current.innerHTML = ''
 
-    // Create new Pannellum viewer
     const viewer = window.pannellum.viewer(containerRef.current, {
       type: 'equirectangular',
       panorama: zone.panorama,
@@ -162,9 +74,6 @@ function PanoramaViewer({ zone, onNavigate }) {
       yaw: zone.heading,
       pitch: 0,
       hfov: 100,
-      onLoad: () => {
-        console.log('Panorama loaded:', zone.id)
-      },
     })
 
     viewerRef.current = viewer
@@ -178,28 +87,28 @@ function PanoramaViewer({ zone, onNavigate }) {
   }, [zone])
 
   return (
-    <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+    <div style={{ width: '100%', height: '100%', position: 'relative', background: '#000' }}>
       {/* Pannellum container */}
       <div ref={containerRef} style={{ width: '100%', height: '100%' }} />
 
-      {/* Current zone label – top center */}
+      {/* Zone label – top center */}
       <div style={{
         position: 'absolute',
         top: 0,
         left: '50%',
         transform: 'translateX(-50%)',
         background: `${zone.color}dd`,
-        padding: '12px 28px',
+        padding: '10px 28px',
         borderRadius: '0 0 16px 16px',
         color: 'white',
         fontFamily: 'system-ui, sans-serif',
         fontWeight: 'bold',
-        fontSize: '15px',
+        fontSize: '14px',
         textAlign: 'center',
         boxShadow: `0 4px 24px ${zone.color}66`,
         zIndex: 10,
       }}>
-        <div style={{ fontSize: '11px', opacity: 0.85, marginBottom: '2px', letterSpacing: '1px' }}>
+        <div style={{ fontSize: '10px', opacity: 0.85, marginBottom: '2px', letterSpacing: '1.5px' }}>
           PUNTO {zone.id}
         </div>
         {zone.title}
@@ -213,8 +122,10 @@ function PanoramaViewer({ zone, onNavigate }) {
         right: 0,
         display: 'flex',
         justifyContent: 'center',
-        gap: '16px',
+        gap: '12px',
         zIndex: 10,
+        flexWrap: 'wrap',
+        padding: '0 20px',
       }}>
         {zone.connections.map(targetId => {
           const target = ZONES.find(z => z.id === targetId)
@@ -225,16 +136,16 @@ function PanoramaViewer({ zone, onNavigate }) {
               style={{
                 background: `${target.color}cc`,
                 border: `2px solid ${target.color}`,
-                borderRadius: '12px',
-                padding: '10px 22px',
+                borderRadius: '10px',
+                padding: '9px 20px',
                 color: 'white',
                 fontFamily: 'system-ui, sans-serif',
-                fontSize: '14px',
+                fontSize: '13px',
                 fontWeight: 'bold',
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '10px',
+                gap: '8px',
                 backdropFilter: 'blur(10px)',
                 transition: 'transform 0.15s, box-shadow 0.15s',
                 boxShadow: `0 4px 20px ${target.color}55`,
@@ -248,8 +159,8 @@ function PanoramaViewer({ zone, onNavigate }) {
                 e.currentTarget.style.boxShadow = `0 4px 20px ${target.color}55`
               }}
             >
-              <span style={{ fontSize: '20px' }}>→</span>
-              <span>{targetId}: {target.title}</span>
+              <span style={{ fontSize: '18px' }}>→</span>
+<span>{targetId}: {target.title}</span>
             </button>
           )
         })}
@@ -266,15 +177,193 @@ function PanoramaViewer({ zone, onNavigate }) {
         borderRadius: '12px',
         color: 'white',
         fontFamily: 'system-ui, sans-serif',
-        maxWidth: '260px',
+        maxWidth: '240px',
         borderLeft: `4px solid ${zone.color}`,
         backdropFilter: 'blur(8px)',
       }}>
-        <div style={{ fontSize: '11px', color: zone.color, fontWeight: 'bold', letterSpacing: '1px', marginBottom: '4px' }}>
+        <div style={{ fontSize: '10px', color: zone.color, fontWeight: 'bold', letterSpacing: '1px', marginBottom: '4px' }}>
           ZONA {zone.id}
         </div>
-        <div style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '4px' }}>{zone.title}</div>
-        <div style={{ fontSize: '13px', color: '#bbb', lineHeight: '1.4' }}>{zone.description}</div>
+        <div style={{ fontSize: '15px', fontWeight: 'bold', marginBottom: '4px' }}>{zone.title}</div>
+        <div style={{ fontSize: '12px', color: '#bbb', lineHeight: '1.4' }}>{zone.description}</div>
+      </div>
+
+      {/* Exit button */}
+      <button
+        onClick={onExit}
+        style={{
+          position: 'absolute',
+          top: '20px',
+          right: '20px',
+          zIndex: 200,
+          background: 'rgba(0,0,0,0.7)',
+          border: '2px solid rgba(255,255,255,0.25)',
+          borderRadius: '10px',
+          padding: '9px 18px',
+          color: 'white',
+          cursor: 'pointer',
+          fontSize: '13px',
+          fontWeight: 'bold',
+          backdropFilter: 'blur(8px)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          fontFamily: 'system-ui, sans-serif',
+        }}
+      >
+        ✕ Volver al mapa
+      </button>
+    </div>
+  )
+}
+
+// ─── Top-Down Map View ─────────────────────────────────────────────────
+
+function TopDownMap({ onZoneClick, activeZone }) {
+  return (
+    <div style={{
+      width: '100%',
+      height: '100%',
+      position: 'relative',
+      background: '#f0efe9', // warm concrete
+      overflow: 'hidden',
+    }}>
+      {/* Subtle map background pattern */}
+      <svg
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', opacity: 0.07 }}
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#333" strokeWidth="0.3" />
+          </pattern>
+        </defs>
+        <rect width="100" height="100" fill="url(#grid)" />
+      </svg>
+
+      {/* Paths connecting zones */}
+      <svg
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
+ viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        {/* A-B path */}
+        <line x1="28" y1="30" x2="68" y2="28" stroke="#c5c0b5" strokeWidth="1.2" strokeDasharray="2,2" />
+        {/* A-C path */}
+        <line x1="28" y1="30" x2="25" y2="68" stroke="#c5c0b5" strokeWidth="1.2" strokeDasharray="2,2" />
+        {/* B-D path */}
+        <line x1="68" y1="28" x2="70" y2="70" stroke="#c5c0b5" strokeWidth="1.2" strokeDasharray="2,2" />
+        {/* C-D path */}
+        <line x1="25" y1="68" x2="70" y2="70" stroke="#c5c0b5" strokeWidth="1.2" strokeDasharray="2,2" />
+      </svg>
+
+      {/* Zone markers */}
+      {ZONES.map(zone => {
+        const isActive = activeZone?.id === zone.id
+        return (
+          <div
+            key={zone.id}
+            onClick={() => onZoneClick(zone)}
+            style={{
+              position: 'absolute',
+              left: `${zone.position.x}%`,
+              top: `${zone.position.y}%`,
+              transform: 'translate(-50%, -50%)',
+              cursor: 'pointer',
+              zIndex: 10,
+            }}
+          >
+            {/* Outer ring */}
+            <div style={{
+              width: isActive ? '72px' : '60px',
+              height: isActive ? '72px' : '60px',
+              borderRadius: '50%',
+              background: zone.color,
+              opacity: isActive ? 1 : 0.85,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: isActive
+                ? `0 0 0 6px ${zone.color}44, 0 0 24px ${zone.color}88`
+                : `0 4px 16px ${zone.color}55`,
+              transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
+              border: isActive ? '3px solid white' : '3px solid transparent',
+            }}>
+              <span style={{
+                color: 'white',
+                fontSize: isActive ? '22px' : '18px',
+                fontWeight: 'bold',
+                fontFamily: 'system-ui, sans-serif',
+                textShadow: '0 1px 4px rgba(0,0,0,0.4)',
+ }}>
+                {zone.label}
+              </span>
+            </div>
+
+            {/* Zone title below */}
+<div style={{
+              marginTop: '8px',
+              textAlign: 'center',
+              maxWidth: '90px',
+              fontSize: '11px',
+              fontWeight: 'bold',
+              color: zone.color,
+              fontFamily: 'system-ui, sans-serif',
+              textTransform: 'uppercase',
+              letterSpacing: '0.5px',
+              textShadow: '0 1px 4px rgba(255,255,255,0.9)',
+              opacity: isActive ? 1 : 0.8,
+              transition: 'opacity 0.2s',
+            }}>
+              {zone.title}
+            </div>
+          </div>
+        )
+      })}
+
+      {/* Map title */}
+      <div style={{
+        position: 'absolute',
+        top: '24px',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        textAlign: 'center',
+        zIndex: 10,
+      }}>
+        <div style={{
+          fontSize: '22px',
+          fontWeight: 'bold',
+          color: '#2c2c2c',
+          fontFamily: 'system-ui, sans-serif',
+          letterSpacing: '2px',
+          textTransform: 'uppercase',
+        }}>
+          Cementerio General
+        </div>
+        <div style={{
+          fontSize: '11px',
+          color: '#888',
+          fontFamily: 'system-ui, sans-serif',
+          marginTop: '4px',
+          letterSpacing: '1px',
+        }}>
+          Guatemala City
+        </div>
+      </div>
+
+      {/* Hint */}
+<div style={{
+        position: 'absolute',
+        bottom: '24px',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        fontSize: '12px',
+        color: '#aaa',
+        fontFamily: 'system-ui, sans-serif',
+        zIndex: 10,
+      }}>
+        Toca un punto para ver la foto 360
       </div>
     </div>
   )
@@ -285,28 +374,28 @@ function PanoramaViewer({ zone, onNavigate }) {
 export default function TerrainMap() {
   const [viewMode, setViewMode] = useState('map') // 'map' | '360'
   const [selectedZone, setSelectedZone] = useState(null)
-  const [hoveredInfo, setHoveredInfo] = useState(null)
 
-  const handleZoneHover = useCallback((zone) => setHoveredInfo(zone), [])
   const handleZoneClick = useCallback((zone) => {
     setSelectedZone(zone)
     setViewMode('360')
   }, [])
+
   const handleNavigate = useCallback((targetId) => {
     const target = ZONES.find(z => z.id === targetId)
     if (target) setSelectedZone(target)
   }, [])
+
   const exit360 = useCallback(() => {
     setViewMode('map')
     setSelectedZone(null)
   }, [])
 
   return (
-    <div style={{
+<div style={{
       width: '100%',
       height: '100vh',
       position: 'relative',
-      background: viewMode === '360' ? '#000' : 'linear-gradient(to bottom, #1a1a2e, #16213e)',
+      background: '#f0efe9',
       fontFamily: 'system-ui, sans-serif',
     }}>
 
@@ -317,33 +406,35 @@ export default function TerrainMap() {
         left: '20px',
         zIndex: 100,
         display: 'flex',
-        gap: '6px',
-        background: 'rgba(0,0,0,0.6)',
-        padding: '6px',
+        gap: '4px',
+        background: 'rgba(255,255,255,0.9)',
+        padding: '5px',
         borderRadius: '12px',
         backdropFilter: 'blur(10px)',
-        border: '1px solid rgba(255,255,255,0.1)',
+        border: '1px solid rgba(0,0,0,0.08)',
+        boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
       }}>
         {[
-          { id: 'map', label: '🗺️  Mapa 3D' },
-          { id: '360', label: '📸  Vista 360' },
+          { id: 'map', label: '🗺️  Planta' },
+          { id: '360', label: '📸  360°' },
         ].map(mode => (
-          <button
+<button
             key={mode.id}
             onClick={() => {
               if (mode.id === '360' && !selectedZone) setSelectedZone(ZONES[0])
               setViewMode(mode.id)
             }}
             style={{
-              background: viewMode === mode.id ? 'rgba(255,255,255,0.2)' : 'transparent',
+              background: viewMode === mode.id ? '#2c2c2c' : 'transparent',
               border: 'none',
               borderRadius: '8px',
-              padding: '8px 16px',
-              color: viewMode === mode.id ? 'white' : '#aaa',
+              padding: '8px 18px',
+              color: viewMode === mode.id ? 'white' : '#666',
               cursor: 'pointer',
-              fontSize: '14px',
+              fontSize: '13px',
               fontWeight: viewMode === mode.id ? 'bold' : 'normal',
               transition: 'all 0.2s',
+              fontFamily: 'system-ui, sans-serif',
             }}
           >
             {mode.label}
@@ -351,145 +442,18 @@ export default function TerrainMap() {
         ))}
       </div>
 
-      {/* ── 3D MAP VIEW ── */}
+      {/* ── TOP-DOWN MAP VIEW ── */}
       {viewMode === 'map' && (
-        <>
-          <Canvas
-            shadows
-            camera={{ position: [14, 11, 14], fov: 50 }}
-            style={{ width: '100%', height: '100%' }}
-            onPointerMissed={() => setHoveredInfo(null)}
-          >
-            <Scene onHover={handleZoneHover} />
-            <OrbitControls
-              enablePan
-              enableZoom
-              enableRotate
-              minDistance={8}
-              maxDistance={30}
-              maxPolarAngle={Math.PI / 2.2}
-            />
-          </Canvas>
-
-          {/* Hover info panel */}
-          <div style={{
-            position: 'absolute',
-            bottom: '24px',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            background: hoveredInfo ? 'rgba(0,0,0,0.88)' : 'rgba(0,0,0,0.45)',
-            padding: hoveredInfo ? '16px 28px' : '10px 20px',
-            borderRadius: '14px',
-            color: 'white',
-            minWidth: '260px',
-            textAlign: 'center',
-            border: hoveredInfo ? `2px solid ${hoveredInfo.color}` : '2px solid transparent',
-            transition: 'all 0.3s ease',
-            backdropFilter: 'blur(8px)',
-          }}>
-            {hoveredInfo ? (
-              <>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '6px' }}>
-                  <div style={{ width: '14px', height: '14px', borderRadius: '50%', background: hoveredInfo.color, boxShadow: `0 0 8px ${hoveredInfo.color}` }} />
-                  <strong style={{ fontSize: '20px' }}>Zona {hoveredInfo.label}</strong>
-                </div>
-                <div style={{ color: hoveredInfo.color, fontSize: '13px', marginBottom: '4px' }}>{hoveredInfo.title}</div>
-                <div style={{ color: '#aaa', fontSize: '12px' }}>{hoveredInfo.description}</div>
-                <button
-                  onClick={() => handleZoneClick(hoveredInfo)}
-                  style={{
-                    marginTop: '10px',
-                    background: hoveredInfo.color,
-                    border: 'none',
-                    borderRadius: '8px',
-                    padding: '7px 18px',
-                    color: 'white',
-                    cursor: 'pointer',
-                    fontSize: '13px',
-                    fontWeight: 'bold',
-                  }}
-                >
-                  📸 Ver en 360
-                </button>
-              </>
-            ) : (
-              <span style={{ color: '#888', fontSize: '13px' }}>✋ Hover over a circle to see details</span>
-            )}
-          </div>
-
-          {/* Legend */}
-          <div style={{
-            position: 'absolute',
-            top: '20px',
-            right: '20px',
-            background: 'rgba(0,0,0,0.7)',
-            padding: '14px 18px',
-            borderRadius: '12px',
-            color: 'white',
-            fontSize: '13px',
-            backdropFilter: 'blur(8px)',
-            border: '1px solid rgba(255,255,255,0.08)',
-          }}>
-            <div style={{ marginBottom: '10px', fontWeight: 'bold', fontSize: '11px', color: '#aaa', letterSpacing: '1px' }}>PUNTOS DE INTERÉS</div>
-            {ZONES.map(zone => (
-              <div
-                key={zone.id}
-                onClick={() => handleZoneClick(zone)}
-                onMouseEnter={e => e.currentTarget.style.background = `${zone.color}33`}
-                onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px',
-                  marginBottom: '6px',
-                  cursor: 'pointer',
-                  padding: '4px 8px',
-                  borderRadius: '6px',
-                  transition: 'background 0.15s',
-                }}
-              >
-                <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: zone.color, boxShadow: `0 0 6px ${zone.color}` }} />
-                <span style={{ fontWeight: 'bold', color: zone.color }}>{zone.id}</span>
-                <span style={{ color: '#ddd' }}>{zone.title}</span>
-              </div>
-            ))}
-          </div>
-        </>
+        <TopDownMap onZoneClick={handleZoneClick} activeZone={null} />
       )}
 
       {/* ── 360 VIEW ── */}
       {viewMode === '360' && selectedZone && (
-        <>
-          <PanoramaViewer
-            zone={selectedZone}
-            onNavigate={handleNavigate}
-          />
-
-          {/* Exit button */}
-          <button
-            onClick={exit360}
-            style={{
-              position: 'absolute',
-              top: '20px',
-              right: '20px',
-              zIndex: 200,
-              background: 'rgba(0,0,0,0.7)',
-              border: '2px solid rgba(255,255,255,0.25)',
-              borderRadius: '12px',
-              padding: '10px 20px',
-              color: 'white',
-              cursor: 'pointer',
-              fontSize: '14px',
-              fontWeight: 'bold',
-              backdropFilter: 'blur(8px)',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-            }}
-          >
-            ✕ Volver al mapa
-          </button>
-        </>
+        <PanoramaViewer
+          zone={selectedZone}
+          onNavigate={handleNavigate}
+          onExit={exit360}
+        />
       )}
     </div>
   )
