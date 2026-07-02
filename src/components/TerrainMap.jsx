@@ -602,34 +602,128 @@ function PanoramaViewer({ zone, onNavigate, onExit, zonesList, movingHotspot, on
 
 // ─── Top-Down Map View ─────────────────────────────────────────────────
 function TopDownMap({ zones, onZoneClick, activeZone }) {
-  return (
-    <div style={{ width: '100%', height: '100%', position: 'relative', background: '#f0efe9', overflow: 'hidden' }}>
-      {/* Grid pattern */}
-      <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: 0.07 }}
-        viewBox="0 0 100 100" preserveAspectRatio="none">
-        <defs>
-          <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#333" strokeWidth="0.3" />
-          </pattern>
-        </defs>
-        <rect width="100" height="100" fill="url(#grid)" />
-      </svg>
+  const [scale, setScale] = useState(1)
+  const [panOffset, setPanOffset] = useState({ x: 0, y: 0 })
+  const [isPanning, setIsPanning] = useState(false)
+  const [panStart, setPanStart] = useState({ x: 0, y: 0 })
+  const containerRef = useRef(null)
 
-      {/* Marked boundary areas of all areas */}
-      {Object.values(AREAS).map(area => {
-        if (!area.boundary) return null
-        const color = area.color
-        return (
-          <svg key={area.id} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
-            viewBox="0 0 100 100" preserveAspectRatio="none">
-            {Array.isArray(area.boundary) ? (
-              area.boundary.map((b, idx) => (
-                <g key={idx}>
+  const handleMouseDown = (e) => {
+    // Left click only, ignore when clicking zone markers (so they can be selected without starting a drag click)
+    if (e.button !== 0) return
+    setIsPanning(true)
+    setPanStart({ x: e.clientX - panOffset.x, y: e.clientY - panOffset.y })
+  }
+
+  const handleMouseMove = (e) => {
+    if (!isPanning) return
+    setPanOffset({
+      x: e.clientX - panStart.x,
+      y: e.clientY - panStart.y
+    })
+  }
+
+  const handleMouseUp = () => {
+    setIsPanning(false)
+  }
+
+  const handleWheel = (e) => {
+    e.preventDefault()
+    const zoomFactor = 1.1
+    const nextScale = e.deltaY < 0 ? scale * zoomFactor : scale / zoomFactor
+    const boundedScale = Math.max(0.5, Math.min(8, nextScale))
+    
+    if (containerRef.current) {
+      const rect = containerRef.current.getBoundingClientRect()
+      const mouseX = e.clientX - rect.left
+      const mouseY = e.clientY - rect.top
+      
+      const newOffsetX = mouseX - (mouseX - panOffset.x) * (boundedScale / scale)
+      const newOffsetY = mouseY - (mouseY - panOffset.y) * (boundedScale / scale)
+      
+      setScale(boundedScale)
+      setPanOffset({ x: newOffsetX, y: newOffsetY })
+    }
+  }
+
+  const resetView = () => {
+    setScale(1)
+    setPanOffset({ x: 0, y: 0 })
+  }
+
+  return (
+    <div 
+      ref={containerRef}
+      onMouseDown={handleMouseDown}
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseUp}
+      onWheel={handleWheel}
+      style={{ 
+        width: '100%', height: '100%', position: 'relative', background: '#f0efe9', 
+        overflow: 'hidden', cursor: isPanning ? 'grabbing' : 'grab', userSelect: 'none' 
+      }}
+    >
+      {/* Zoom / Pan Inner Canvas */}
+      <div style={{
+        width: '100%', height: '100%',
+        transform: `translate(${panOffset.x}px, ${panOffset.y}px) scale(${scale})`,
+        transformOrigin: '0 0',
+        position: 'absolute', inset: 0,
+        transition: isPanning ? 'none' : 'transform 0.1s ease-out'
+      }}>
+        {/* Grid pattern */}
+        <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: 0.07 }}
+          viewBox="0 0 100 100" preserveAspectRatio="none">
+          <defs>
+            <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+              <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#333" strokeWidth="0.3" />
+            </pattern>
+          </defs>
+          <rect width="100" height="100" fill="url(#grid)" />
+        </svg>
+
+        {/* Marked boundary areas of all areas */}
+        {Object.values(AREAS).map(area => {
+          if (!area.boundary) return null
+          const color = area.color
+          return (
+            <svg key={area.id} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
+              viewBox="0 0 100 100" preserveAspectRatio="none">
+              {Array.isArray(area.boundary) ? (
+                area.boundary.map((b, idx) => (
+                  <g key={idx}>
+                    <rect
+                      x={b.xMin}
+                      y={b.yMin}
+                      width={b.xMax - b.xMin}
+                      height={b.yMax - b.yMin}
+                      fill={`${color}06`}
+                      stroke={color}
+                      strokeWidth="0.4"
+                      strokeDasharray="1,1"
+                      rx="2"
+                    />
+                    <text
+                      x={b.xMin + 1}
+                      y={b.yMin + 3.5}
+                      fill={color}
+                      fontSize="2.2px"
+                      fontWeight="bold"
+                      fontFamily="system-ui,sans-serif"
+                      letterSpacing="0.1px"
+                    >
+                      {b.label}
+                    </text>
+                  </g>
+                ))
+              ) : (
+                <g>
                   <rect
-                    x={b.xMin}
-                    y={b.yMin}
-                    width={b.xMax - b.xMin}
-                    height={b.yMax - b.yMin}
+                    x={area.boundary.xMin}
+                    y={area.boundary.yMin}
+                    width={area.boundary.xMax - area.boundary.xMin}
+                    height={area.boundary.yMax - area.boundary.yMin}
                     fill={`${color}06`}
                     stroke={color}
                     strokeWidth="0.4"
@@ -637,104 +731,85 @@ function TopDownMap({ zones, onZoneClick, activeZone }) {
                     rx="2"
                   />
                   <text
-                    x={b.xMin + 1}
-                    y={b.yMin + 3.5}
+                    x={area.boundary.xMin + 1}
+                    y={area.boundary.yMin + 3.5}
                     fill={color}
                     fontSize="2.2px"
                     fontWeight="bold"
                     fontFamily="system-ui,sans-serif"
                     letterSpacing="0.1px"
                   >
-                    {b.label}
+                    {area.boundary.label}
                   </text>
                 </g>
-              ))
-            ) : (
-              <g>
-                <rect
-                  x={area.boundary.xMin}
-                  y={area.boundary.yMin}
-                  width={area.boundary.xMax - area.boundary.xMin}
-                  height={area.boundary.yMax - area.boundary.yMin}
-                  fill={`${color}06`}
-                  stroke={color}
-                  strokeWidth="0.4"
-                  strokeDasharray="1,1"
-                  rx="2"
-                />
-                <text
-                  x={area.boundary.xMin + 1}
-                  y={area.boundary.yMin + 3.5}
-                  fill={color}
-                  fontSize="2.2px"
-                  fontWeight="bold"
-                  fontFamily="system-ui,sans-serif"
-                  letterSpacing="0.1px"
-                >
-                  {area.boundary.label}
-                </text>
-              </g>
+              )}
+            </svg>
+          )
+        })}
+
+        {/* Connection lines */}
+        {zones.length >= 2 && (
+          <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
+            viewBox="0 0 100 100" preserveAspectRatio="none">
+            {zones.flatMap(zone =>
+              (zone.connections || []).map(targetId => {
+                const target = zones.find(z => z.id === targetId)
+                if (!target) return null
+                return (
+                  <line key={`${zone.id}-${targetId}`}
+                    x1={zone.position.x} y1={zone.position.y}
+                    x2={target.position.x} y2={target.position.y}
+                    stroke={`${zone.color}bb`} strokeWidth="1.2" strokeDasharray="2,2" />
+                )
+              })
             )}
           </svg>
-        )
-      })}
+        )}
 
-      {/* Connection lines */}
-      {zones.length >= 2 && (
-        <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
-          viewBox="0 0 100 100" preserveAspectRatio="none">
-          {zones.flatMap(zone =>
-            (zone.connections || []).map(targetId => {
-              const target = zones.find(z => z.id === targetId)
-              if (!target) return null
-              return (
-                <line key={`${zone.id}-${targetId}`}
-                  x1={zone.position.x} y1={zone.position.y}
-                  x2={target.position.x} y2={target.position.y}
-                  stroke={`${zone.color}bb`} strokeWidth="1.2" strokeDasharray="2,2" />
-              )
-            })
-          )}
-        </svg>
-      )}
-
-      {/* Zone markers */}
-      {zones.map(zone => {
-        const isActive = activeZone?.id === zone.id
-        return (
-          <div key={zone.id} onClick={() => onZoneClick(zone)}
-            style={{
-              position: 'absolute', left: `${zone.position.x}%`, top: `${zone.position.y}%`,
-              transform: 'translate(-50%, -50%)', cursor: 'pointer', zIndex: 10,
-            }}>
-            <div style={{
-              width: isActive ? '72px' : '60px', height: isActive ? '72px' : '60px',
-              borderRadius: '50%', background: zone.color, opacity: isActive ? 1 : 0.85,
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              boxShadow: isActive ? `0 0 0 6px ${zone.color}44, 0 0 24px ${zone.color}88` : `0 4px 16px ${zone.color}55`,
-              transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-              border: isActive ? '3px solid white' : '3px solid transparent',
-            }}>
-              <span style={{ color: 'white', fontSize: isActive ? '22px' : '18px', fontWeight: 'bold',
-                fontFamily: 'system-ui,sans-serif', textShadow: '0 1px 4px rgba(0,0,0,0.4)' }}>
-                {zone.label}
-              </span>
+        {/* Zone markers */}
+        {zones.map(zone => {
+          const isActive = activeZone?.id === zone.id
+          return (
+            <div key={zone.id} 
+              onClick={(e) => {
+                e.stopPropagation();
+                onZoneClick(zone);
+              }}
+              style={{
+                position: 'absolute', left: `${zone.position.x}%`, top: `${zone.position.y}%`,
+                transform: 'translate(-50%, -50%)', cursor: 'pointer', zIndex: 10,
+              }}>
+              <div style={{
+                width: isActive ? '72px' : '60px', height: isActive ? '72px' : '60px',
+                borderRadius: '50%', background: zone.color, opacity: isActive ? 1 : 0.85,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                boxShadow: isActive ? `0 0 0 6px ${zone.color}44, 0 0 24px ${zone.color}88` : `0 4px 16px ${zone.color}55`,
+                transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                border: isActive ? '3px solid white' : '3px solid transparent',
+              }}>
+                <span style={{ color: 'white', fontSize: isActive ? '22px' : '18px', fontWeight: 'bold',
+                  fontFamily: 'system-ui,sans-serif', textShadow: '0 1px 4px rgba(0,0,0,0.4)' }}>
+                  {zone.label}
+                </span>
+              </div>
+              <div style={{
+                marginTop: '8px', textAlign: 'center', maxWidth: '90px', fontSize: '11px',
+                fontWeight: 'bold', color: zone.color, fontFamily: 'system-ui,sans-serif',
+                textTransform: 'uppercase', letterSpacing: '0.5px',
+                textShadow: '0 1px 4px rgba(255,255,255,0.9)', opacity: isActive ? 1 : 0.8,
+                transition: 'opacity 0.2s',
+              }}>
+                {zone.title}
+              </div>
             </div>
-            <div style={{
-              marginTop: '8px', textAlign: 'center', maxWidth: '90px', fontSize: '11px',
-              fontWeight: 'bold', color: zone.color, fontFamily: 'system-ui,sans-serif',
-              textTransform: 'uppercase', letterSpacing: '0.5px',
-              textShadow: '0 1px 4px rgba(255,255,255,0.9)', opacity: isActive ? 1 : 0.8,
-              transition: 'opacity 0.2s',
-            }}>
-              {zone.title}
-            </div>
-          </div>
-        )
-      })}
+          )
+        })}
+      </div>
 
+      {/* Floating UI Elements (Unscaled / Stationary) */}
+      
       {/* Map title */}
-      <div style={{ position: 'absolute', top: '24px', left: '50%', transform: 'translateX(-50%)', textAlign: 'center', zIndex: 10 }}>
+      <div style={{ position: 'absolute', top: '24px', left: '50%', transform: 'translateX(-50%)', textAlign: 'center', zIndex: 10, pointerEvents: 'none' }}>
         <div style={{ fontSize: '22px', fontWeight: 'bold', color: '#2c2c2c', fontFamily: 'system-ui,sans-serif', letterSpacing: '2px', textTransform: 'uppercase' }}>
           Cementerio General
         </div>
@@ -743,11 +818,18 @@ function TopDownMap({ zones, onZoneClick, activeZone }) {
         </div>
       </div>
 
+      {/* Floating Zoom Controls */}
+      <div style={{ position: 'absolute', bottom: '24px', right: '24px', display: 'flex', gap: '8px', zIndex: 20 }}>
+        <button onClick={() => setScale(s => Math.min(8, s * 1.25))} style={{ width: '36px', height: '36px', borderRadius: '10px', background: 'white', border: '1px solid rgba(0,0,0,0.15)', fontSize: '18px', fontWeight: 'bold', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>+</button>
+        <button onClick={() => setScale(s => Math.max(0.5, s / 1.25))} style={{ width: '36px', height: '36px', borderRadius: '10px', background: 'white', border: '1px solid rgba(0,0,0,0.15)', fontSize: '18px', fontWeight: 'bold', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>-</button>
+        <button onClick={resetView} style={{ padding: '0 12px', height: '36px', borderRadius: '10px', background: 'white', border: '1px solid rgba(0,0,0,0.15)', fontSize: '12px', fontWeight: 'bold', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>Reset</button>
+      </div>
+
       {/* Hint */}
       {zones.length > 0 && (
         <div style={{ position: 'absolute', bottom: '24px', left: '50%', transform: 'translateX(-50%)',
-          fontSize: '12px', color: '#aaa', fontFamily: 'system-ui,sans-serif', zIndex: 10 }}>
-          Toca un punto para ver la foto 360
+          fontSize: '12px', color: '#888', fontFamily: 'system-ui,sans-serif', zIndex: 10, pointerEvents: 'none', background: 'rgba(255,255,255,0.7)', padding: '4px 12px', borderRadius: '12px' }}>
+          Arrastra para mover · Rueda para hacer zoom · Toca un punto para ver la foto 360
         </div>
       )}
     </div>
