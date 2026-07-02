@@ -1,0 +1,121 @@
+{
+  "cipreses": {
+    "point_count": 26,
+    "candidate_layer_ids": [
+      {
+        "geometry_source": "text_labels",
+        "id": "text_0251",
+        "text": "JARDIN CIPRESES",
+        "utm": [
+          762317.868,
+          1623552.038
+        ],
+        "note": "an anchor point, not a path/polygon -- use to manually pick the nearest real wall/road/parcel id, or place this area's points by hand near this coordinate"
+      }
+    ],
+    "confidence": "anchor_resolved"
+  },
+  "bugambilias": {
+    "point_count": 24,
+    "candidate_layer_ids": [
+      {
+        "geometry_source": "text_labels",
+        "id": "text_0232",
+        "text": "JARDIN BUGANVILIAS 2",
+        "utm": [
+          762313.065,
+          1623615.294
+        ],
+        "note": "an anchor point, not a path/polygon -- use to manually pick the nearest real wall/road/parcel id, or place this area's points by hand near this coordinate"
+      },
+      {
+        "geometry_source": "text_labels",
+        "id": "text_0242",
+        "text": "JARDIN BUGANVILIAS 1",
+        "utm": [
+          762295.507,
+          1623599.492
+        ],
+        "note": "an anchor point, not a path/polygon -- use to manually pick the nearest real wall/road/parcel id, or place this area's points by hand near this coordinate"
+      },
+      {
+        "geometry_source": "text_labels",
+        "id": "text_0250",
+        "text": "JARDIN BUGANVILIAS 3",
+        "utm": [
+          762346.81,
+          1623673.29
+        ],
+        "note": "an anchor point, not a path/polygon -- use to manually pick the nearest real wall/road/parcel id, or place this area's points by hand near this coordinate"
+      }
+    ],
+    "confidence": "anchor_resolved"
+  },
+  "encinos": {
+    "point_count": 14,
+    "candidate_layer_ids": [
+      {
+        "geometry_source": "text_labels",
+        "id": "text_0233",
+        "text": "JARDIN ENCINOS",
+        "utm": [
+          762416.214,
+          1623587.893
+        ],
+        "note": "an anchor point, not a path/polygon -- use to manually pick the nearest real wall/road/parcel id, or place this area's points by hand near this coordinate"
+      }
+    ],
+    "confidence": "anchor_resolved"
+  },
+  "unknown_section_1": {
+    "point_count": 19,
+    "candidate_layer_ids": [],
+    "confidence": "none"
+  },
+  "unknown_section_2": {
+    "point_count": 16,
+    "candidate_layer_ids": [],
+    "confidence": "none"
+  },
+  "comoding_1": {
+    "point_count": 15,
+    "candidate_layer_ids": [],
+    "confidence": "none"
+  },
+  "paseo_cipreses": {
+    "point_count": 23,
+    "candidate_layer_ids": [
+      {
+        "geometry_source": "text_labels",
+        "id": "text_0116",
+        "text": "NICHOS PASEO CIPRESES",
+        "utm": [
+          762309.457,
+          1623539.958
+        ],
+        "note": "an anchor point, not a path/polygon -- use to manually pick the nearest real wall/road/parcel id, or place this area's points by hand near this coordinate"
+      },
+      {
+        "geometry_source": "text_labels",
+        "id": "text_0241",
+        "text": "PASEO CIPRESES",
+        "utm": [
+          762360.832,
+          1623515.107
+        ],
+        "note": "an anchor point, not a path/polygon -- use to manually pick the nearest real wall/road/parcel id, or place this area's points by hand near this coordinate"
+      }
+    ],
+    "confidence": "anchor_resolved"
+  },
+  "comoding_2": {
+    "point_count": 10,
+    "candidate_layer_ids": [],
+    "confidence": "none"
+  },
+  "area7": {
+    "point_count": 78,
+    "candidate_layer_ids": [],
+    "confidence": "none"
+  }
+}

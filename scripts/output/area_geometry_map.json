@@ -1,0 +1,52 @@
+{
+  "demo": {
+    "geometry_source": null,
+    "id": null,
+    "note": "demo area, keep synthetic position"
+  },
+  "cipreses": {
+    "geometry_source": "roads",
+    "id": "road_0001",
+    "note": "anchored by label(s) 'JARDIN CIPRESES'; resolved to nearest roads road_0001 (10.3m away) -- verify"
+  },
+  "bugambilias": {
+    "geometry_source": "roads",
+    "id": "road_0001",
+    "note": "anchored by label(s) 'JARDIN BUGANVILIAS 2', 'JARDIN BUGANVILIAS 1', 'JARDIN BUGANVILIAS 3'; resolved to nearest roads road_0001 (60.7m away) -- verify"
+  },
+  "encinos": {
+    "geometry_source": "walls",
+    "id": "wall_0188",
+    "note": "anchored by label(s) 'JARDIN ENCINOS'; resolved to nearest walls wall_0188 (6.6m away) -- verify"
+  },
+  "unknown_section_1": {
+    "geometry_source": null,
+    "id": null,
+    "note": "REVIEW: fill in by cross-referencing match_preview.svg with the cemetery's real layout"
+  },
+  "unknown_section_2": {
+    "geometry_source": null,
+    "id": null,
+    "note": "REVIEW: fill in by cross-referencing match_preview.svg with the cemetery's real layout"
+  },
+  "comoding_1": {
+    "geometry_source": null,
+    "id": null,
+    "note": "REVIEW: fill in by cross-referencing match_preview.svg with the cemetery's real layout"
+  },
+  "paseo_cipreses": {
+    "geometry_source": "walls",
+    "id": "wall_1855",
+    "note": "anchored by label(s) 'NICHOS PASEO CIPRESES', 'PASEO CIPRESES'; resolved to nearest walls wall_1855 (24.7m away) -- verify"
+  },
+  "comoding_2": {
+    "geometry_source": null,
+    "id": null,
+    "note": "REVIEW: fill in by cross-referencing match_preview.svg with the cemetery's real layout"
+  },
+  "area7": {
+    "geometry_source": null,
+    "id": null,
+    "note": "REVIEW: fill in by cross-referencing match_preview.svg with the cemetery's real layout"
+  }
+}

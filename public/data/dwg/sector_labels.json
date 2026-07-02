@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sector_label_000",
+    "block_name": "CAPILLA ECU",
+    "layer": "TEXTURA",
+    "utm": [
+      762238.093,
+      1623617.742
+    ]
+  },
+  {
+    "id": "sector_label_001",
+    "block_name": "capilla fam",
+    "layer": "DIMENCIONES",
+    "utm": [
+      762346.162,
+      1623624.633
+    ]
+  },
+  {
+    "id": "sector_label_002",
+    "block_name": "capilla fam",
+    "layer": "DIMENCIONES",
+    "utm": [
+      762347.474,
+      1623619.623
+    ]
+  },
+  {
+    "id": "sector_label_003",
+    "block_name": "capilla fam",
+    "layer": "DIMENCIONES",
+    "utm": [
+      762348.776,
+      1623614.65
+    ]
+  },
+  {
+    "id": "sector_label_004",
+    "block_name": "capilla fam",
+    "layer": "DIMENCIONES",
+    "utm": [
+      762344.832,
+      1623629.711
+    ]
+  }
+]

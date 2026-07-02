@@ -1,0 +1,6 @@
+{
+  "angle_deg_from_utm_north": 0.0,
+  "raw_vector_utm": null,
+  "source": "default_utm_grid_north",
+  "note": "the 'north' layer has no geometry in model space; UTM grid north is used as-is (negligible convergence-angle error at this latitude/zone)"
+}

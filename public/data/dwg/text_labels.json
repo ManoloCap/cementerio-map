@@ -1,0 +1,1163 @@
+[
+  {
+    "id": "text_0000",
+    "layer": "TEXTO",
+    "text": "\u00c1REA DE VENTAS",
+    "utm": [
+      762495.739,
+      1623429.968
+    ]
+  },
+  {
+    "id": "text_0001",
+    "layer": "TEXTO",
+    "text": "S.S.",
+    "utm": [
+      762487.777,
+      1623433.124
+    ]
+  },
+  {
+    "id": "text_0002",
+    "layer": "TEXTO",
+    "text": "CAPILLA ECUMENICA",
+    "utm": [
+      762231.882,
+      1623629.191
+    ]
+  },
+  {
+    "id": "text_0003",
+    "layer": "TEXTO",
+    "text": "ALCANTARILLA PLUVIAL",
+    "utm": [
+      762456.14,
+      1623491.191
+    ]
+  },
+  {
+    "id": "text_0004",
+    "layer": "TEXTO",
+    "text": "CUNETA",
+    "utm": [
+      762529.644,
+      1623459.698
+    ]
+  },
+  {
+    "id": "text_0005",
+    "layer": "TEXTO",
+    "text": "CUNETA DRENAJE",
+    "utm": [
+      762502.799,
+      1623542.094
+    ]
+  },
+  {
+    "id": "text_0006",
+    "layer": "TEXTO",
+    "text": "CUNETA DRENAJE",
+    "utm": [
+      762548.449,
+      1623535.194
+    ]
+  },
+  {
+    "id": "text_0007",
+    "layer": "TEXTO",
+    "text": "MURO PERIMETRAL PREFABRICADO",
+    "utm": [
+      762566.221,
+      1623538.387
+    ]
+  },
+  {
+    "id": "text_0008",
+    "layer": "TEXTO",
+    "text": "MURO PERIMETRAL PREFABRICADO",
+    "utm": [
+      762543.274,
+      1623452.641
+    ]
+  },
+  {
+    "id": "text_0009",
+    "layer": "TEXTO",
+    "text": "LINEA DE TUBERIA",
+    "utm": [
+      762490.102,
+      1623501.06
+    ]
+  },
+  {
+    "id": "text_0010",
+    "layer": "textos",
+    "text": "B A N Q U E T A",
+    "utm": [
+      762492.183,
+      1623524.057
+    ]
+  },
+  {
+    "id": "text_0025",
+    "layer": "TEXTO",
+    "text": "C A L L E",
+    "utm": [
+      762502.409,
+      1623490.497
+    ]
+  },
+  {
+    "id": "text_0026",
+    "layer": "TEXTO",
+    "text": "MOJON",
+    "utm": [
+      762359.662,
+      1623549.021
+    ]
+  },
+  {
+    "id": "text_0027",
+    "layer": "TEXTO",
+    "text": "MOJON",
+    "utm": [
+      762360.135,
+      1623565.767
+    ]
+  },
+  {
+    "id": "text_0028",
+    "layer": "TEXTO",
+    "text": "MOJON",
+    "utm": [
+      762355.731,
+      1623560.707
+    ]
+  },
+  {
+    "id": "text_0029",
+    "layer": "TEXTO",
+    "text": "R O T O N D A",
+    "utm": [
+      762253.309,
+      1623598.752
+    ]
+  },
+  {
+    "id": "text_0030",
+    "layer": "TEXTO",
+    "text": "CEMENTERIO Y FUNERARIA JARDINES DE LA PAZ",
+    "utm": [
+      762160.432,
+      1623445.475
+    ]
+  },
+  {
+    "id": "text_0031",
+    "layer": "TEXTO",
+    "text": "MASTER PLAN",
+    "utm": [
+      762163.004,
+      1623436.128
+    ]
+  },
+  {
+    "id": "text_0032",
+    "layer": "TEXTO",
+    "text": "PARQUE\\PPARA\\P70 VEHICULOS",
+    "utm": [
+      762287.116,
+      1623512.909
+    ]
+  },
+  {
+    "id": "text_0033",
+    "layer": "TEXTO",
+    "text": "PARQUEOS",
+    "utm": [
+      762492.971,
+      1623460.009
+    ]
+  },
+  {
+    "id": "text_0034",
+    "layer": "TEXTO",
+    "text": "PARQUEOS",
+    "utm": [
+      762467.988,
+      1623443.696
+    ]
+  },
+  {
+    "id": "text_0035",
+    "layer": "TEXTO",
+    "text": "CALLE EMPEDRADA",
+    "utm": [
+      762444.835,
+      1623460.427
+    ]
+  },
+  {
+    "id": "text_0036",
+    "layer": "TEXTO",
+    "text": "INICIO DE CALLE ASFALTADA",
+    "utm": [
+      762427.322,
+      1623483.157
+    ]
+  },
+  {
+    "id": "text_0037",
+    "layer": "TEXTO",
+    "text": "R O T O N D A",
+    "utm": [
+      762396.077,
+      1623520.514
+    ]
+  },
+  {
+    "id": "text_0038",
+    "layer": "TEXTO",
+    "text": "FUENTE",
+    "utm": [
+      762413.098,
+      1623524.392
+    ]
+  },
+  {
+    "id": "text_0039",
+    "layer": "TEXTO",
+    "text": "PARQUEOS",
+    "utm": [
+      762158.512,
+      1623578.087
+    ]
+  },
+  {
+    "id": "text_0040",
+    "layer": "TEXTO",
+    "text": "M O D U L O S",
+    "utm": [
+      762362.812,
+      1623517.341
+    ]
+  },
+  {
+    "id": "text_0041",
+    "layer": "TEXTO",
+    "text": "M O D U L O S",
+    "utm": [
+      762176.712,
+      1623613.377
+    ]
+  },
+  {
+    "id": "text_0042",
+    "layer": "TEXTO",
+    "text": "M O D U L O S",
+    "utm": [
+      762176.255,
+      1623661.366
+    ]
+  },
+  {
+    "id": "text_0043",
+    "layer": "TEXTO",
+    "text": "M O D U L O S",
+    "utm": [
+      762204.605,
+      1623730.684
+    ]
+  },
+  {
+    "id": "text_0083",
+    "layer": "textos",
+    "text": "LINEA DE TUBERIA",
+    "utm": [
+      762479.259,
+      1623501.212
+    ]
+  },
+  {
+    "id": "text_0084",
+    "layer": "TEXTO",
+    "text": "ACCESO A LABORATORIO",
+    "utm": [
+      762456.725,
+      1623486.053
+    ]
+  },
+  {
+    "id": "text_0085",
+    "layer": "textos",
+    "text": "EUCALIPTO",
+    "utm": [
+      762427.953,
+      1623549.08
+    ]
+  },
+  {
+    "id": "text_0087",
+    "layer": "TEXTO",
+    "text": "T A L U D",
+    "utm": [
+      762364.993,
+      1623572.183
+    ]
+  },
+  {
+    "id": "text_0088",
+    "layer": "TEXTO",
+    "text": "ROTONDA",
+    "utm": [
+      762353.855,
+      1623570.5
+    ]
+  },
+  {
+    "id": "text_0089",
+    "layer": "TEXTO",
+    "text": "RAMPA",
+    "utm": [
+      762383.106,
+      1623571.339
+    ]
+  },
+  {
+    "id": "text_0090",
+    "layer": "TEXTO",
+    "text": "P A R E D",
+    "utm": [
+      762370.639,
+      1623567.437
+    ]
+  },
+  {
+    "id": "text_0091",
+    "layer": "TEXTO",
+    "text": "T A L U D",
+    "utm": [
+      762361.745,
+      1623576.053
+    ]
+  },
+  {
+    "id": "text_0093",
+    "layer": "TEXTO",
+    "text": "CALLE HACIA ROTONDA",
+    "utm": [
+      762412.74,
+      1623509.969
+    ]
+  },
+  {
+    "id": "text_0094",
+    "layer": "TEXTO",
+    "text": "BANQUETA",
+    "utm": [
+      762416.667,
+      1623490.233
+    ]
+  },
+  {
+    "id": "text_0095",
+    "layer": "TEXTO",
+    "text": "BODEGA",
+    "utm": [
+      762381.663,
+      1623508.386
+    ]
+  },
+  {
+    "id": "text_0100",
+    "layer": "TEXTO",
+    "text": "49B",
+    "utm": [
+      762488.394,
+      1623475.93
+    ]
+  },
+  {
+    "id": "text_0101",
+    "layer": "TEXTO",
+    "text": "50A",
+    "utm": [
+      762485.71,
+      1623477.332
+    ]
+  },
+  {
+    "id": "text_0102",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762367.044,
+      1623627.765
+    ]
+  },
+  {
+    "id": "text_0103",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762374.975,
+      1623636.506
+    ]
+  },
+  {
+    "id": "text_0104",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762393.827,
+      1623646.495
+    ]
+  },
+  {
+    "id": "text_0105",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762408.394,
+      1623632.51
+    ]
+  },
+  {
+    "id": "text_0106",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762440.385,
+      1623646.78
+    ]
+  },
+  {
+    "id": "text_0107",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762448.425,
+      1623633.347
+    ]
+  },
+  {
+    "id": "text_0108",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762486.657,
+      1623609.963
+    ]
+  },
+  {
+    "id": "text_0109",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762422.521,
+      1623600.827
+    ]
+  },
+  {
+    "id": "text_0110",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762430.21,
+      1623607.572
+    ]
+  },
+  {
+    "id": "text_0111",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762433.632,
+      1623617.86
+    ]
+  },
+  {
+    "id": "text_0112",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762457.49,
+      1623603.627
+    ]
+  },
+  {
+    "id": "text_0113",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762454.28,
+      1623619.383
+    ]
+  },
+  {
+    "id": "text_0114",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762463.155,
+      1623593.626
+    ]
+  },
+  {
+    "id": "text_0115",
+    "layer": "TEXTO",
+    "text": "P L A T A F O R M A",
+    "utm": [
+      762467.885,
+      1623582.544
+    ]
+  },
+  {
+    "id": "text_0116",
+    "layer": "TEXTO",
+    "text": "NICHOS PASEO CIPRESES",
+    "utm": [
+      762309.457,
+      1623539.958
+    ]
+  },
+  {
+    "id": "text_0119",
+    "layer": "TEXTO",
+    "text": "MODULOS DE OSARIO",
+    "utm": [
+      762394.539,
+      1623517.467
+    ]
+  },
+  {
+    "id": "text_0131",
+    "layer": "TEXTO",
+    "text": "TALUD",
+    "utm": [
+      762342.955,
+      1623626.937
+    ]
+  },
+  {
+    "id": "text_0132",
+    "layer": "TEXTO",
+    "text": "ESTRUCTURA",
+    "utm": [
+      762287.977,
+      1623529.976
+    ]
+  },
+  {
+    "id": "text_0133",
+    "layer": "TEXTO",
+    "text": "F 21\u00b4",
+    "utm": [
+      762298.715,
+      1623529.732
+    ]
+  },
+  {
+    "id": "text_0134",
+    "layer": "TEXTO",
+    "text": "F 23\u00b4",
+    "utm": [
+      762289.586,
+      1623534.584
+    ]
+  },
+  {
+    "id": "text_0135",
+    "layer": "TEXTO",
+    "text": "ESTRUCTURA COMPLEMENTO BODEGA",
+    "utm": [
+      762264.994,
+      1623546.203
+    ]
+  },
+  {
+    "id": "text_0136",
+    "layer": "TEXTO",
+    "text": "M17",
+    "utm": [
+      762283.299,
+      1623558.479
+    ]
+  },
+  {
+    "id": "text_0137",
+    "layer": "TEXTO",
+    "text": "M16",
+    "utm": [
+      762288.26,
+      1623554.718
+    ]
+  },
+  {
+    "id": "text_0138",
+    "layer": "TEXTO",
+    "text": "M15",
+    "utm": [
+      762294.048,
+      1623550.188
+    ]
+  },
+  {
+    "id": "text_0139",
+    "layer": "TEXTO",
+    "text": "M14",
+    "utm": [
+      762299.653,
+      1623545.674
+    ]
+  },
+  {
+    "id": "text_0140",
+    "layer": "TEXTO",
+    "text": "M13",
+    "utm": [
+      762304.72,
+      1623541.854
+    ]
+  },
+  {
+    "id": "text_0141",
+    "layer": "TEXTO",
+    "text": "M12",
+    "utm": [
+      762309.553,
+      1623538.083
+    ]
+  },
+  {
+    "id": "text_0142",
+    "layer": "TEXTO",
+    "text": "M11",
+    "utm": [
+      762314.906,
+      1623534.351
+    ]
+  },
+  {
+    "id": "text_0143",
+    "layer": "TEXTO",
+    "text": "M10",
+    "utm": [
+      762319.929,
+      1623530.803
+    ]
+  },
+  {
+    "id": "text_0152",
+    "layer": "TEXTO",
+    "text": "BANQUETA",
+    "utm": [
+      762402.613,
+      1623512.666
+    ]
+  },
+  {
+    "id": "text_0167",
+    "layer": "TEXTO",
+    "text": "MURO DE PIEDRA",
+    "utm": [
+      762351.944,
+      1623621.429
+    ]
+  },
+  {
+    "id": "text_0168",
+    "layer": "TEXTO",
+    "text": "RAMPA",
+    "utm": [
+      762342.608,
+      1623633.605
+    ]
+  },
+  {
+    "id": "text_0169",
+    "layer": "TEXTO",
+    "text": "RAMPA",
+    "utm": [
+      762350.583,
+      1623634.991
+    ]
+  },
+  {
+    "id": "text_0170",
+    "layer": "TEXTO",
+    "text": "TALUD",
+    "utm": [
+      762350.943,
+      1623629.09
+    ]
+  },
+  {
+    "id": "text_0190",
+    "layer": "TEXTO",
+    "text": "MODULO 1",
+    "utm": [
+      762410.908,
+      1623475.938
+    ]
+  },
+  {
+    "id": "text_0191",
+    "layer": "TEXTO",
+    "text": "MODULO 2",
+    "utm": [
+      762407.589,
+      1623479.733
+    ]
+  },
+  {
+    "id": "text_0192",
+    "layer": "TEXTO",
+    "text": "MODULO 3",
+    "utm": [
+      762406.666,
+      1623484.08
+    ]
+  },
+  {
+    "id": "text_0193",
+    "layer": "TEXTO",
+    "text": "MODULO 4",
+    "utm": [
+      762401.756,
+      1623489.858
+    ]
+  },
+  {
+    "id": "text_0194",
+    "layer": "TEXTO",
+    "text": "MODULO 5",
+    "utm": [
+      762397.95,
+      1623492.533
+    ]
+  },
+  {
+    "id": "text_0195",
+    "layer": "TEXTO",
+    "text": "MODULO 6",
+    "utm": [
+      762393.842,
+      1623495.498
+    ]
+  },
+  {
+    "id": "text_0196",
+    "layer": "TEXTO",
+    "text": "MODULO 7",
+    "utm": [
+      762415.065,
+      1623480.461
+    ]
+  },
+  {
+    "id": "text_0197",
+    "layer": "TEXTO",
+    "text": "MODULO 8",
+    "utm": [
+      762411.796,
+      1623484.136
+    ]
+  },
+  {
+    "id": "text_0198",
+    "layer": "TEXTO",
+    "text": "MODULO 9",
+    "utm": [
+      762412.866,
+      1623496.904
+    ]
+  },
+  {
+    "id": "text_0199",
+    "layer": "TEXTO",
+    "text": "MODULO 10",
+    "utm": [
+      762409.64,
+      1623501.248
+    ]
+  },
+  {
+    "id": "text_0200",
+    "layer": "TEXTO",
+    "text": "MODULO 11",
+    "utm": [
+      762407.166,
+      1623505.75
+    ]
+  },
+  {
+    "id": "text_0201",
+    "layer": "TEXTO",
+    "text": "MODULO 12",
+    "utm": [
+      762402.514,
+      1623510.764
+    ]
+  },
+  {
+    "id": "text_0202",
+    "layer": "TEXTO",
+    "text": "MODULO 16",
+    "utm": [
+      762394.759,
+      1623512.996
+    ]
+  },
+  {
+    "id": "text_0203",
+    "layer": "TEXTO",
+    "text": "MODULO 17",
+    "utm": [
+      762390.21,
+      1623514.896
+    ]
+  },
+  {
+    "id": "text_0204",
+    "layer": "TEXTO",
+    "text": "MODULO 18",
+    "utm": [
+      762384.562,
+      1623516.163
+    ]
+  },
+  {
+    "id": "text_0205",
+    "layer": "TEXTO",
+    "text": "MODULO 13",
+    "utm": [
+      762404.157,
+      1623497.956
+    ]
+  },
+  {
+    "id": "text_0206",
+    "layer": "TEXTO",
+    "text": "MODULO 14",
+    "utm": [
+      762401.398,
+      1623502.383
+    ]
+  },
+  {
+    "id": "text_0207",
+    "layer": "TEXTO",
+    "text": "MODULO 15",
+    "utm": [
+      762398.275,
+      1623505.867
+    ]
+  },
+  {
+    "id": "text_0208",
+    "layer": "TEXTO",
+    "text": "MODULO 1",
+    "utm": [
+      762344.075,
+      1623630.627
+    ]
+  },
+  {
+    "id": "text_0209",
+    "layer": "TEXTO",
+    "text": "MODULO 2",
+    "utm": [
+      762345.417,
+      1623625.489
+    ]
+  },
+  {
+    "id": "text_0210",
+    "layer": "TEXTO",
+    "text": "MODULO 3",
+    "utm": [
+      762346.739,
+      1623620.524
+    ]
+  },
+  {
+    "id": "text_0211",
+    "layer": "TEXTO",
+    "text": "MODULO 4",
+    "utm": [
+      762348.023,
+      1623615.866
+    ]
+  },
+  {
+    "id": "text_0212",
+    "layer": "TEXTO",
+    "text": "TALLER",
+    "utm": [
+      762288.336,
+      1623529.002
+    ]
+  },
+  {
+    "id": "text_0213",
+    "layer": "TEXTO",
+    "text": "S.S.",
+    "utm": [
+      762297.575,
+      1623523.687
+    ]
+  },
+  {
+    "id": "text_0214",
+    "layer": "TEXTO",
+    "text": "POZO",
+    "utm": [
+      762301.082,
+      1623527.923
+    ]
+  },
+  {
+    "id": "text_0215",
+    "layer": "TEXTO",
+    "text": "TANQUE CISTERNA",
+    "utm": [
+      762251.087,
+      1623536.769
+    ]
+  },
+  {
+    "id": "text_0224",
+    "layer": "TEXTO",
+    "text": "PARQUEOS",
+    "utm": [
+      762382.459,
+      1623595.741
+    ]
+  },
+  {
+    "id": "text_0225",
+    "layer": "TEXTO",
+    "text": "PASO DE MAQUINARIA",
+    "utm": [
+      762385.842,
+      1623597.888
+    ]
+  },
+  {
+    "id": "text_0226",
+    "layer": "TEXTO",
+    "text": "TAPADERAS DE CUNETA",
+    "utm": [
+      762380.996,
+      1623599.533
+    ]
+  },
+  {
+    "id": "text_0227",
+    "layer": "TEXTO",
+    "text": "CAPILLAS FAMILIARES",
+    "utm": [
+      762194.432,
+      1623660.297
+    ]
+  },
+  {
+    "id": "text_0228",
+    "layer": "TEXTO",
+    "text": "CAPILLAS FAMILIARES",
+    "utm": [
+      762206.367,
+      1623655.186
+    ]
+  },
+  {
+    "id": "text_0232",
+    "layer": "TEXTO",
+    "text": "JARDIN BUGANVILIAS 2",
+    "utm": [
+      762313.065,
+      1623615.294
+    ]
+  },
+  {
+    "id": "text_0233",
+    "layer": "TEXTO",
+    "text": "JARDIN ENCINOS",
+    "utm": [
+      762416.214,
+      1623587.893
+    ]
+  },
+  {
+    "id": "text_0234",
+    "layer": "TEXTO",
+    "text": "JARDIN JACARANDAS 3",
+    "utm": [
+      762433.242,
+      1623543.16
+    ]
+  },
+  {
+    "id": "text_0235",
+    "layer": "TEXTO",
+    "text": "JARDIN JACARANDAS 1",
+    "utm": [
+      762507.057,
+      1623576.475
+    ]
+  },
+  {
+    "id": "text_0236",
+    "layer": "TEXTO",
+    "text": "JARDIN JACARANDAS 2",
+    "utm": [
+      762486.111,
+      1623525.398
+    ]
+  },
+  {
+    "id": "text_0237",
+    "layer": "TEXTO",
+    "text": "JARDIN EUCALIPTOS",
+    "utm": [
+      762558.822,
+      1623537.053
+    ]
+  },
+  {
+    "id": "text_0238",
+    "layer": "TEXTO",
+    "text": "JARDIN EUCALIPTOS",
+    "utm": [
+      762546.189,
+      1623478.271
+    ]
+  },
+  {
+    "id": "text_0239",
+    "layer": "TEXTO",
+    "text": "JARDIN HORTENSIAS",
+    "utm": [
+      762435.958,
+      1623520.017
+    ]
+  },
+  {
+    "id": "text_0240",
+    "layer": "TEXTO",
+    "text": "JACARANDAS PLUS",
+    "utm": [
+      762479.209,
+      1623495.747
+    ]
+  },
+  {
+    "id": "text_0241",
+    "layer": "TEXTO",
+    "text": "PASEO CIPRESES",
+    "utm": [
+      762360.832,
+      1623515.107
+    ]
+  },
+  {
+    "id": "text_0242",
+    "layer": "TEXTO",
+    "text": "JARDIN BUGANVILIAS 1",
+    "utm": [
+      762295.507,
+      1623599.492
+    ]
+  },
+  {
+    "id": "text_0243",
+    "layer": "TEXTO",
+    "text": "JACARANDAS 1",
+    "utm": [
+      762515.75,
+      1623557.996
+    ]
+  },
+  {
+    "id": "text_0244",
+    "layer": "TEXTO",
+    "text": "JACARANDAS 2",
+    "utm": [
+      762503.389,
+      1623511.317
+    ]
+  },
+  {
+    "id": "text_0245",
+    "layer": "TEXTO",
+    "text": "EUCALIPTOS \"B\" 2",
+    "utm": [
+      762539.533,
+      1623559.913
+    ]
+  },
+  {
+    "id": "text_0246",
+    "layer": "TEXTO",
+    "text": "EUCALIPTOS \"A\" 2",
+    "utm": [
+      762552.463,
+      1623551.691
+    ]
+  },
+  {
+    "id": "text_0247",
+    "layer": "TEXTO",
+    "text": "EUCALPTOS \"A\" 1",
+    "utm": [
+      762544.494,
+      1623495.164
+    ]
+  },
+  {
+    "id": "text_0248",
+    "layer": "TEXTO",
+    "text": "EUCALIPTOS \"C\" 1",
+    "utm": [
+      762519.094,
+      1623503.677
+    ]
+  },
+  {
+    "id": "text_0249",
+    "layer": "TEXTO",
+    "text": "EUCALIPTOS \"B\" 1",
+    "utm": [
+      762531.066,
+      1623502.871
+    ]
+  },
+  {
+    "id": "text_0250",
+    "layer": "TEXTO",
+    "text": "JARDIN BUGANVILIAS 3",
+    "utm": [
+      762346.81,
+      1623673.29
+    ]
+  },
+  {
+    "id": "text_0251",
+    "layer": "TEXTO",
+    "text": "JARDIN CIPRESES",
+    "utm": [
+      762317.868,
+      1623552.038
+    ]
+  },
+  {
+    "id": "text_0252",
+    "layer": "TEXTO",
+    "text": "EUCALIPTOS \"C\" 2",
+    "utm": [
+      762529.056,
+      1623551.546
+    ]
+  }
+]

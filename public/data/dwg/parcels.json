@@ -1,0 +1,194 @@
+[
+  {
+    "id": "parcel_0000",
+    "layer": "A1 LOTES",
+    "closed": false,
+    "points_utm": [
+      [
+        762430.494,
+        1623462.659
+      ],
+      [
+        762432.376,
+        1623461.044
+      ]
+    ],
+    "sector": "A1 LOTES"
+  },
+  {
+    "id": "parcel_0001",
+    "layer": "lotes cementerio",
+    "closed": false,
+    "points_utm": [
+      [
+        762502.653,
+        1623542.425
+      ],
+      [
+        762510.803,
+        1623568.837
+      ]
+    ],
+    "sector": "lotes cementerio"
+  },
+  {
+    "id": "parcel_0002",
+    "layer": "lotes cementerio",
+    "closed": false,
+    "points_utm": [
+      [
+        762501.506,
+        1623542.778
+      ],
+      [
+        762509.656,
+        1623569.191
+      ]
+    ],
+    "sector": "lotes cementerio"
+  },
+  {
+    "id": "parcel_0003",
+    "layer": "lotes cementerio",
+    "closed": false,
+    "points_utm": [
+      [
+        762510.803,
+        1623568.837
+      ],
+      [
+        762515.128,
+        1623582.342
+      ]
+    ],
+    "sector": "lotes cementerio"
+  },
+  {
+    "id": "parcel_0004",
+    "layer": "lotes cementerio",
+    "closed": false,
+    "points_utm": [
+      [
+        762509.66,
+        1623569.203
+      ],
+      [
+        762513.986,
+        1623582.708
+      ]
+    ],
+    "sector": "lotes cementerio"
+  },
+  {
+    "id": "parcel_0005",
+    "layer": "lotes cementerio",
+    "closed": false,
+    "points_utm": [
+      [
+        762515.128,
+        1623582.342
+      ],
+      [
+        762524.593,
+        1623600.722
+      ]
+    ],
+    "sector": "lotes cementerio"
+  },
+  {
+    "id": "parcel_0006",
+    "layer": "lotes cementerio",
+    "closed": false,
+    "points_utm": [
+      [
+        762514.061,
+        1623582.891
+      ],
+      [
+        762523.526,
+        1623601.272
+      ]
+    ],
+    "sector": "lotes cementerio"
+  },
+  {
+    "id": "parcel_0009",
+    "layer": "lotes cementerio",
+    "closed": false,
+    "points_utm": [
+      [
+        762418.939,
+        1623564.53
+      ],
+      [
+        762405.529,
+        1623571.487
+      ]
+    ],
+    "sector": "lotes cementerio"
+  },
+  {
+    "id": "parcel_0010",
+    "layer": "lotes cementerio",
+    "closed": false,
+    "points_utm": [
+      [
+        762419.342,
+        1623565.166
+      ],
+      [
+        762405.874,
+        1623572.153
+      ]
+    ],
+    "sector": "lotes cementerio"
+  },
+  {
+    "id": "parcel_0011",
+    "layer": "lotes cementerio",
+    "closed": false,
+    "points_utm": [
+      [
+        762405.529,
+        1623571.487
+      ],
+      [
+        762405.874,
+        1623572.153
+      ]
+    ],
+    "sector": "lotes cementerio"
+  },
+  {
+    "id": "parcel_0017",
+    "layer": "lotes cementerio",
+    "closed": false,
+    "points_utm": [
+      [
+        762345.361,
+        1623628.264
+      ],
+      [
+        762345.3,
+        1623627.511
+      ]
+    ],
+    "sector": "lotes cementerio"
+  },
+  {
+    "id": "parcel_0018",
+    "layer": "lotes cementerio",
+    "closed": false,
+    "points_utm": [
+      [
+        762345.3,
+        1623627.511
+      ],
+      [
+        762349.252,
+        1623612.42
+      ]
+    ],
+    "sector": "lotes cementerio"
+  }
+]
