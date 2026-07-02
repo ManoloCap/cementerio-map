@@ -1,0 +1,2554 @@
+{
+  "demo": [
+    {
+      "id": "A",
+      "title": "Punto demo 1",
+      "description": "Punto inicial de la secuencia de fotos (14:40:26).",
+      "panorama": "/previews/dji_mimo_20260620_144026_0_1781988176914_photo_small.jpg",
+      "position": {
+        "x": 50,
+        "y": 70
+      },
+      "heading": 0
+    },
+    {
+      "id": "B",
+      "title": "Punto demo 2",
+      "description": "Punto medio de la secuencia, tomado unos pasos adelante (14:40:38).",
+      "panorama": "/previews/dji_mimo_20260620_144038_0_1781988176378_photo_small.jpg",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "heading": 0
+    },
+    {
+      "id": "C",
+      "title": "Punto demo 3",
+      "description": "Punto final de la secuencia de fotos (14:40:52).",
+      "panorama": "/previews/dji_mimo_20260620_144052_0_1781988175717_photo_small.jpg",
+      "position": {
+        "x": 50,
+        "y": 30
+      },
+      "heading": 0,
+      "hotspotOverrides": {
+        "B": {
+          "yaw": 23,
+          "pitch": -12
+        }
+      }
+    }
+  ],
+  "cipreses": [
+    {
+      "id": "1A-1",
+      "title": "Cipreses 1",
+      "description": "Punto 1 de la secuencia (14:34:45).",
+      "panorama": "/map_images/AREA1/CAM_20260620143445_0062_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 90
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-2",
+      "title": "Cipreses 2",
+      "description": "Punto 2 de la secuencia (14:35:25).",
+      "panorama": "/map_images/AREA1/CAM_20260620143525_0063_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 87
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-3",
+      "title": "Cipreses 3",
+      "description": "Punto 3 de la secuencia (14:35:40).",
+      "panorama": "/map_images/AREA1/CAM_20260620143540_0064_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 84
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-4",
+      "title": "Cipreses 4",
+      "description": "Punto 4 de la secuencia (14:35:53).",
+      "panorama": "/map_images/AREA1/CAM_20260620143553_0065_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 81
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-5",
+      "title": "Cipreses 5",
+      "description": "Punto 5 de la secuencia (14:36:06).",
+      "panorama": "/map_images/AREA1/CAM_20260620143606_0066_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 78
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-6",
+      "title": "Cipreses 6",
+      "description": "Punto 6 de la secuencia (14:36:19).",
+      "panorama": "/map_images/AREA1/CAM_20260620143619_0067_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 75
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-7",
+      "title": "Cipreses 7",
+      "description": "Punto 7 de la secuencia (14:36:31).",
+      "panorama": "/map_images/AREA1/CAM_20260620143631_0068_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 72
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-8",
+      "title": "Cipreses 8",
+      "description": "Punto 8 de la secuencia (14:36:46).",
+      "panorama": "/map_images/AREA1/CAM_20260620143646_0069_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 69
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-9",
+      "title": "Cipreses 9",
+      "description": "Punto 9 de la secuencia (14:36:59).",
+      "panorama": "/map_images/AREA1/CAM_20260620143659_0070_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 66
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-10",
+      "title": "Cipreses 10",
+      "description": "Punto 10 de la secuencia (14:37:13).",
+      "panorama": "/map_images/AREA1/CAM_20260620143713_0071_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 63
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-11",
+      "title": "Cipreses 11",
+      "description": "Punto 11 de la secuencia (14:37:26).",
+      "panorama": "/map_images/AREA1/CAM_20260620143726_0072_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 60
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-12",
+      "title": "Cipreses 12",
+      "description": "Punto 12 de la secuencia (14:37:39).",
+      "panorama": "/map_images/AREA1/CAM_20260620143739_0073_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 57
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-13",
+      "title": "Cipreses 13",
+      "description": "Punto 13 de la secuencia (14:37:51).",
+      "panorama": "/map_images/AREA1/CAM_20260620143751_0074_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 54
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-14",
+      "title": "Cipreses 14",
+      "description": "Punto 14 de la secuencia (14:38:07).",
+      "panorama": "/map_images/AREA1/CAM_20260620143807_0075_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 51
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-15",
+      "title": "Cipreses 15",
+      "description": "Punto 15 de la secuencia (14:38:20).",
+      "panorama": "/map_images/AREA1/CAM_20260620143820_0076_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 48
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-16",
+      "title": "Cipreses 16",
+      "description": "Punto 16 de la secuencia (14:38:32).",
+      "panorama": "/map_images/AREA1/CAM_20260620143832_0077_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 45
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-17",
+      "title": "Cipreses 17",
+      "description": "Punto 17 de la secuencia (14:38:45).",
+      "panorama": "/map_images/AREA1/CAM_20260620143845_0078_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 42
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-18",
+      "title": "Cipreses 18",
+      "description": "Punto 18 de la secuencia (14:38:59).",
+      "panorama": "/map_images/AREA1/CAM_20260620143859_0079_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 39
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-19",
+      "title": "Cipreses 19",
+      "description": "Punto 19 de la secuencia (14:39:23).",
+      "panorama": "/map_images/AREA1/CAM_20260620143923_0080_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 36
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-20",
+      "title": "Cipreses 20",
+      "description": "Punto 20 de la secuencia (14:39:36).",
+      "panorama": "/map_images/AREA1/CAM_20260620143936_0081_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 33
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-21",
+      "title": "Cipreses 21",
+      "description": "Punto 21 de la secuencia (14:39:48).",
+      "panorama": "/map_images/AREA1/CAM_20260620143948_0082_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 30
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-22",
+      "title": "Cipreses 22",
+      "description": "Punto 22 de la secuencia (14:40:01).",
+      "panorama": "/map_images/AREA1/CAM_20260620144001_0083_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 27
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-23",
+      "title": "Cipreses 23",
+      "description": "Punto 23 de la secuencia (14:40:13).",
+      "panorama": "/map_images/AREA1/CAM_20260620144013_0084_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 24
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-24",
+      "title": "Cipreses 24",
+      "description": "Punto 24 de la secuencia (14:40:27).",
+      "panorama": "/map_images/AREA1/CAM_20260620144027_0085_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 21
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-25",
+      "title": "Cipreses 25",
+      "description": "Punto 25 de la secuencia (14:40:39).",
+      "panorama": "/map_images/AREA1/CAM_20260620144039_0086_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 18
+      },
+      "heading": 0
+    },
+    {
+      "id": "1A-26",
+      "title": "Cipreses 26",
+      "description": "Punto 26 de la secuencia (14:40:52).",
+      "panorama": "/map_images/AREA1/CAM_20260620144052_0087_D.JPG",
+      "position": {
+        "x": 15,
+        "y": 15
+      },
+      "heading": 0,
+      "hotspotOverrides": {
+        "1A-25": {
+          "yaw": 71,
+          "pitch": -14
+        }
+      }
+    }
+  ],
+  "bugambilias": [
+    {
+      "id": "1B-1",
+      "title": "Bugambilias 1",
+      "description": "Punto 1 de la secuencia (14:52:22).",
+      "panorama": "/map_images/AREA1/CAM_20260620145222_0088_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 15
+      },
+      "heading": 0,
+      "hotspotOverrides": {
+        "1B-2": {
+          "yaw": 111,
+          "pitch": -18
+        }
+      }
+    },
+    {
+      "id": "1B-2",
+      "title": "Bugambilias 2",
+      "description": "Punto 2 de la secuencia (14:52:37).",
+      "panorama": "/map_images/AREA1/CAM_20260620145237_0089_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 18
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-3",
+      "title": "Bugambilias 3",
+      "description": "Punto 3 de la secuencia (14:52:53).",
+      "panorama": "/map_images/AREA1/CAM_20260620145253_0090_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 21
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-4",
+      "title": "Bugambilias 4",
+      "description": "Punto 4 de la secuencia (14:53:06).",
+      "panorama": "/map_images/AREA1/CAM_20260620145306_0091_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 24
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-5",
+      "title": "Bugambilias 5",
+      "description": "Punto 5 de la secuencia (14:53:21).",
+      "panorama": "/map_images/AREA1/CAM_20260620145321_0092_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 27
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-6",
+      "title": "Bugambilias 6",
+      "description": "Punto 6 de la secuencia (14:53:33).",
+      "panorama": "/map_images/AREA1/CAM_20260620145333_0093_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 30
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-7",
+      "title": "Bugambilias 7",
+      "description": "Punto 7 de la secuencia (14:53:46).",
+      "panorama": "/map_images/AREA1/CAM_20260620145346_0094_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 33
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-8",
+      "title": "Bugambilias 8",
+      "description": "Punto 8 de la secuencia (14:53:59).",
+      "panorama": "/map_images/AREA1/CAM_20260620145359_0095_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 36
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-9",
+      "title": "Bugambilias 9",
+      "description": "Punto 9 de la secuencia (14:54:11).",
+      "panorama": "/map_images/AREA1/CAM_20260620145411_0096_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 39
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-10",
+      "title": "Bugambilias 10",
+      "description": "Punto 10 de la secuencia (14:54:23).",
+      "panorama": "/map_images/AREA1/CAM_20260620145423_0097_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 42
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-11",
+      "title": "Bugambilias 11",
+      "description": "Punto 11 de la secuencia (14:54:35).",
+      "panorama": "/map_images/AREA1/CAM_20260620145435_0098_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 45
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-12",
+      "title": "Bugambilias 12",
+      "description": "Punto 12 de la secuencia (14:54:49).",
+      "panorama": "/map_images/AREA1/CAM_20260620145449_0099_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 48
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-13",
+      "title": "Bugambilias 13",
+      "description": "Punto 13 de la secuencia (14:55:02).",
+      "panorama": "/map_images/AREA1/CAM_20260620145502_0100_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 51
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-14",
+      "title": "Bugambilias 14",
+      "description": "Punto 14 de la secuencia (14:55:15).",
+      "panorama": "/map_images/AREA1/CAM_20260620145515_0101_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 54
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-15",
+      "title": "Bugambilias 15",
+      "description": "Punto 15 de la secuencia (14:55:27).",
+      "panorama": "/map_images/AREA1/CAM_20260620145527_0102_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 57
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-16",
+      "title": "Bugambilias 16",
+      "description": "Punto 16 de la secuencia (14:55:40).",
+      "panorama": "/map_images/AREA1/CAM_20260620145540_0103_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 60
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-17",
+      "title": "Bugambilias 17",
+      "description": "Punto 17 de la secuencia (14:55:54).",
+      "panorama": "/map_images/AREA1/CAM_20260620145554_0104_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 63
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-18",
+      "title": "Bugambilias 18",
+      "description": "Punto 18 de la secuencia (14:56:05).",
+      "panorama": "/map_images/AREA1/CAM_20260620145605_0105_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 66
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-19",
+      "title": "Bugambilias 19",
+      "description": "Punto 19 de la secuencia (14:56:18).",
+      "panorama": "/map_images/AREA1/CAM_20260620145618_0106_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 69
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-20",
+      "title": "Bugambilias 20",
+      "description": "Punto 20 de la secuencia (14:56:31).",
+      "panorama": "/map_images/AREA1/CAM_20260620145631_0107_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 72
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-21",
+      "title": "Bugambilias 21",
+      "description": "Punto 21 de la secuencia (14:56:52).",
+      "panorama": "/map_images/AREA1/CAM_20260620145652_0108_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 75
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-22",
+      "title": "Bugambilias 22",
+      "description": "Punto 22 de la secuencia (14:57:04).",
+      "panorama": "/map_images/AREA1/CAM_20260620145704_0109_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 78
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-23",
+      "title": "Bugambilias 23",
+      "description": "Punto 23 de la secuencia (14:57:16).",
+      "panorama": "/map_images/AREA1/CAM_20260620145716_0110_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 81
+      },
+      "heading": 0
+    },
+    {
+      "id": "1B-24",
+      "title": "Bugambilias 24",
+      "description": "Punto 24 de la secuencia (14:57:29).",
+      "panorama": "/map_images/AREA1/CAM_20260620145729_0111_D.JPG",
+      "position": {
+        "x": 22,
+        "y": 84
+      },
+      "heading": 0
+    }
+  ],
+  "encinos": [
+    {
+      "id": "2A-1",
+      "title": "Encinos 1",
+      "description": "Punto 1 de la secuencia (15:09:48).",
+      "panorama": "/map_images/AREA2/CAM_20260620150948_0112_D.JPG",
+      "position": {
+        "x": 40,
+        "y": 75
+      },
+      "heading": 0
+    },
+    {
+      "id": "2A-2",
+      "title": "Encinos 2",
+      "description": "Punto 2 de la secuencia (15:10:03).",
+      "panorama": "/map_images/AREA2/CAM_20260620151003_0113_D.JPG",
+      "position": {
+        "x": 40,
+        "y": 70
+      },
+      "heading": 0
+    },
+    {
+      "id": "2A-3",
+      "title": "Encinos 3",
+      "description": "Punto 3 de la secuencia (15:10:16).",
+      "panorama": "/map_images/AREA2/CAM_20260620151016_0114_D.JPG",
+      "position": {
+        "x": 40,
+        "y": 65
+      },
+      "heading": 0
+    },
+    {
+      "id": "2A-4",
+      "title": "Encinos 4",
+      "description": "Punto 4 de la secuencia (15:10:29).",
+      "panorama": "/map_images/AREA2/CAM_20260620151029_0115_D.JPG",
+      "position": {
+        "x": 40,
+        "y": 60
+      },
+      "heading": 0,
+      "hotspotOverrides": {
+        "2A-3": {
+          "yaw": 69,
+          "pitch": -14
+        }
+      }
+    },
+    {
+      "id": "3A-1",
+      "title": "Encinos 1",
+      "description": "Punto 1 de la secuencia (15:10:42).",
+      "panorama": "/map_images/AREA3/CAM_20260620151042_0116_D.JPG",
+      "position": {
+        "x": 30,
+        "y": 80
+      },
+      "heading": 0
+    },
+    {
+      "id": "3A-2",
+      "title": "Encinos 2",
+      "description": "Punto 2 de la secuencia (15:10:55).",
+      "panorama": "/map_images/AREA3/CAM_20260620151055_0117_D.JPG",
+      "position": {
+        "x": 30,
+        "y": 73.3
+      },
+      "heading": 0
+    },
+    {
+      "id": "3A-3",
+      "title": "Encinos 3",
+      "description": "Punto 3 de la secuencia (15:11:07).",
+      "panorama": "/map_images/AREA3/CAM_20260620151107_0118_D.JPG",
+      "position": {
+        "x": 30,
+        "y": 66.7
+      },
+      "heading": 0
+    },
+    {
+      "id": "3A-4",
+      "title": "Encinos 4",
+      "description": "Punto 4 de la secuencia (15:11:19).",
+      "panorama": "/map_images/AREA3/CAM_20260620151119_0119_D.JPG",
+      "position": {
+        "x": 30,
+        "y": 60
+      },
+      "heading": 0
+    },
+    {
+      "id": "3A-5",
+      "title": "Encinos 5",
+      "description": "Punto 5 de la secuencia (15:11:31).",
+      "panorama": "/map_images/AREA3/CAM_20260620151131_0120_D.JPG",
+      "position": {
+        "x": 30,
+        "y": 53.3
+      },
+      "heading": 0
+    },
+    {
+      "id": "3A-6",
+      "title": "Encinos 6",
+      "description": "Punto 6 de la secuencia (15:11:43).",
+      "panorama": "/map_images/AREA3/CAM_20260620151143_0121_D.JPG",
+      "position": {
+        "x": 30,
+        "y": 46.7
+      },
+      "heading": 0
+    },
+    {
+      "id": "3A-7",
+      "title": "Encinos 7",
+      "description": "Punto 7 de la secuencia (15:11:54).",
+      "panorama": "/map_images/AREA3/CAM_20260620151154_0122_D.JPG",
+      "position": {
+        "x": 30,
+        "y": 40
+      },
+      "heading": 0
+    },
+    {
+      "id": "3A-8",
+      "title": "Encinos 8",
+      "description": "Punto 8 de la secuencia (15:12:06).",
+      "panorama": "/map_images/AREA3/CAM_20260620151206_0123_D.JPG",
+      "position": {
+        "x": 30,
+        "y": 33.3
+      },
+      "heading": 0
+    },
+    {
+      "id": "3A-9",
+      "title": "Encinos 9",
+      "description": "Punto 9 de la secuencia (15:12:18).",
+      "panorama": "/map_images/AREA3/CAM_20260620151218_0124_D.JPG",
+      "position": {
+        "x": 30,
+        "y": 26.7
+      },
+      "heading": 0
+    },
+    {
+      "id": "3A-10",
+      "title": "Encinos 10",
+      "description": "Punto 10 de la secuencia (15:12:30).",
+      "panorama": "/map_images/AREA3/CAM_20260620151230_0125_D.JPG",
+      "position": {
+        "x": 30,
+        "y": 20
+      },
+      "heading": 0
+    }
+  ],
+  "unknown_section_1": [
+    {
+      "id": "3B-1",
+      "title": "Sección Desconocida 1 1",
+      "description": "Punto 1 de la secuencia (15:21:31).",
+      "panorama": "/map_images/AREA3/CAM_20260620152131_0126_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 85
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-2",
+      "title": "Sección Desconocida 1 2",
+      "description": "Punto 2 de la secuencia (15:21:44).",
+      "panorama": "/map_images/AREA3/CAM_20260620152144_0127_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 80.4
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-3",
+      "title": "Sección Desconocida 1 3",
+      "description": "Punto 3 de la secuencia (15:21:56).",
+      "panorama": "/map_images/AREA3/CAM_20260620152156_0128_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 75.7
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-4",
+      "title": "Sección Desconocida 1 4",
+      "description": "Punto 4 de la secuencia (15:22:08).",
+      "panorama": "/map_images/AREA3/CAM_20260620152208_0129_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 71.1
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-5",
+      "title": "Sección Desconocida 1 5",
+      "description": "Punto 5 de la secuencia (15:22:20).",
+      "panorama": "/map_images/AREA3/CAM_20260620152220_0130_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 66.4
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-6",
+      "title": "Sección Desconocida 1 6",
+      "description": "Punto 6 de la secuencia (15:22:32).",
+      "panorama": "/map_images/AREA3/CAM_20260620152232_0131_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 61.8
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-7",
+      "title": "Sección Desconocida 1 7",
+      "description": "Punto 7 de la secuencia (15:22:46).",
+      "panorama": "/map_images/AREA3/CAM_20260620152246_0132_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 57.1
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-8",
+      "title": "Sección Desconocida 1 8",
+      "description": "Punto 8 de la secuencia (15:22:58).",
+      "panorama": "/map_images/AREA3/CAM_20260620152258_0133_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 52.5
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-9",
+      "title": "Sección Desconocida 1 9",
+      "description": "Punto 9 de la secuencia (15:23:10).",
+      "panorama": "/map_images/AREA3/CAM_20260620152310_0134_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 47.9
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-10",
+      "title": "Sección Desconocida 1 10",
+      "description": "Punto 10 de la secuencia (15:23:22).",
+      "panorama": "/map_images/AREA3/CAM_20260620152322_0135_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 43.2
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-11",
+      "title": "Sección Desconocida 1 11",
+      "description": "Punto 11 de la secuencia (15:23:33).",
+      "panorama": "/map_images/AREA3/CAM_20260620152333_0136_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 38.6
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-12",
+      "title": "Sección Desconocida 1 12",
+      "description": "Punto 12 de la secuencia (15:23:45).",
+      "panorama": "/map_images/AREA3/CAM_20260620152345_0137_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 33.9
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-13",
+      "title": "Sección Desconocida 1 13",
+      "description": "Punto 13 de la secuencia (15:23:57).",
+      "panorama": "/map_images/AREA3/CAM_20260620152357_0138_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 29.3
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-14",
+      "title": "Sección Desconocida 1 14",
+      "description": "Punto 14 de la secuencia (15:24:08).",
+      "panorama": "/map_images/AREA3/CAM_20260620152408_0139_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 24.6
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-15",
+      "title": "Sección Desconocida 1 15",
+      "description": "Punto 15 de la secuencia (15:24:19).",
+      "panorama": "/map_images/AREA3/CAM_20260620152419_0140_D.JPG",
+      "position": {
+        "x": 70,
+        "y": 20
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-16",
+      "title": "Sección Desconocida 1 16",
+      "description": "Punto 16 de la secuencia (15:24:30).",
+      "panorama": "/map_images/AREA3/CAM_20260620152430_0141_D.JPG",
+      "position": {
+        "x": 73,
+        "y": 20
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-17",
+      "title": "Sección Desconocida 1 17",
+      "description": "Punto 17 de la secuencia (15:24:42).",
+      "panorama": "/map_images/AREA3/CAM_20260620152442_0142_D.JPG",
+      "position": {
+        "x": 76,
+        "y": 20
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-18",
+      "title": "Sección Desconocida 1 18",
+      "description": "Punto 18 de la secuencia (15:24:56).",
+      "panorama": "/map_images/AREA3/CAM_20260620152456_0143_D.JPG",
+      "position": {
+        "x": 79,
+        "y": 20
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-19",
+      "title": "Sección Desconocida 1 19",
+      "description": "Punto 19 de la secuencia (15:25:08).",
+      "panorama": "/map_images/AREA3/CAM_20260620152508_0144_D.JPG",
+      "position": {
+        "x": 82,
+        "y": 20
+      },
+      "heading": 0
+    }
+  ],
+  "unknown_section_2": [
+    {
+      "id": "3B-20",
+      "title": "Sección Desconocida 2 20",
+      "description": "Punto 20 de la secuencia (15:25:21).",
+      "panorama": "/map_images/AREA3/CAM_20260620152521_0145_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 20
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-21",
+      "title": "Sección Desconocida 2 21",
+      "description": "Punto 21 de la secuencia (15:25:33).",
+      "panorama": "/map_images/AREA3/CAM_20260620152533_0146_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 24.3
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-22",
+      "title": "Sección Desconocida 2 22",
+      "description": "Punto 22 de la secuencia (15:25:50).",
+      "panorama": "/map_images/AREA3/CAM_20260620152550_0147_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 28.7
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-23",
+      "title": "Sección Desconocida 2 23",
+      "description": "Punto 23 de la secuencia (15:26:02).",
+      "panorama": "/map_images/AREA3/CAM_20260620152602_0148_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 33
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-24",
+      "title": "Sección Desconocida 2 24",
+      "description": "Punto 24 de la secuencia (15:26:15).",
+      "panorama": "/map_images/AREA3/CAM_20260620152615_0149_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 37.3
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-25",
+      "title": "Sección Desconocida 2 25",
+      "description": "Punto 25 de la secuencia (15:26:27).",
+      "panorama": "/map_images/AREA3/CAM_20260620152627_0150_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 41.7
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-26",
+      "title": "Sección Desconocida 2 26",
+      "description": "Punto 26 de la secuencia (15:26:39).",
+      "panorama": "/map_images/AREA3/CAM_20260620152639_0151_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 46
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-27",
+      "title": "Sección Desconocida 2 27",
+      "description": "Punto 27 de la secuencia (15:26:50).",
+      "panorama": "/map_images/AREA3/CAM_20260620152650_0152_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 50.3
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-28",
+      "title": "Sección Desconocida 2 28",
+      "description": "Punto 28 de la secuencia (15:27:03).",
+      "panorama": "/map_images/AREA3/CAM_20260620152703_0153_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 54.7
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-29",
+      "title": "Sección Desconocida 2 29",
+      "description": "Punto 29 de la secuencia (15:27:15).",
+      "panorama": "/map_images/AREA3/CAM_20260620152715_0154_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 59
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-30",
+      "title": "Sección Desconocida 2 30",
+      "description": "Punto 30 de la secuencia (15:27:27).",
+      "panorama": "/map_images/AREA3/CAM_20260620152727_0155_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 63.3
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-31",
+      "title": "Sección Desconocida 2 31",
+      "description": "Punto 31 de la secuencia (15:27:39).",
+      "panorama": "/map_images/AREA3/CAM_20260620152739_0156_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 67.7
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-32",
+      "title": "Sección Desconocida 2 32",
+      "description": "Punto 32 de la secuencia (15:27:51).",
+      "panorama": "/map_images/AREA3/CAM_20260620152751_0157_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 72
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-33",
+      "title": "Sección Desconocida 2 33",
+      "description": "Punto 33 de la secuencia (15:28:04).",
+      "panorama": "/map_images/AREA3/CAM_20260620152804_0158_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 76.3
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-34",
+      "title": "Sección Desconocida 2 34",
+      "description": "Punto 34 de la secuencia (15:28:17).",
+      "panorama": "/map_images/AREA3/CAM_20260620152817_0159_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 80.7
+      },
+      "heading": 0
+    },
+    {
+      "id": "3B-35",
+      "title": "Sección Desconocida 2 35",
+      "description": "Punto 35 de la secuencia (15:28:30).",
+      "panorama": "/map_images/AREA3/CAM_20260620152830_0160_D.JPG",
+      "position": {
+        "x": 85,
+        "y": 85
+      },
+      "heading": 0
+    }
+  ],
+  "comoding_1": [
+    {
+      "id": "4A-1",
+      "title": "Comodín 1 1",
+      "description": "Punto 1 de la secuencia (15:36:34).",
+      "panorama": "/map_images/AREA4/CAM_20260620153634_0161_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 80
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-2",
+      "title": "Comodín 1 2",
+      "description": "Punto 2 de la secuencia (15:36:46).",
+      "panorama": "/map_images/AREA4/CAM_20260620153646_0162_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 76
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-3",
+      "title": "Comodín 1 3",
+      "description": "Punto 3 de la secuencia (15:36:58).",
+      "panorama": "/map_images/AREA4/CAM_20260620153658_0163_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 72
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-4",
+      "title": "Comodín 1 4",
+      "description": "Punto 4 de la secuencia (15:37:10).",
+      "panorama": "/map_images/AREA4/CAM_20260620153710_0164_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 68
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-5",
+      "title": "Comodín 1 5",
+      "description": "Punto 5 de la secuencia (15:37:22).",
+      "panorama": "/map_images/AREA4/CAM_20260620153722_0165_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 64
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-6",
+      "title": "Comodín 1 6",
+      "description": "Punto 6 de la secuencia (15:37:34).",
+      "panorama": "/map_images/AREA4/CAM_20260620153734_0166_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 60
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-7",
+      "title": "Comodín 1 7",
+      "description": "Punto 7 de la secuencia (15:37:45).",
+      "panorama": "/map_images/AREA4/CAM_20260620153745_0167_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 56
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-8",
+      "title": "Comodín 1 8",
+      "description": "Punto 8 de la secuencia (15:37:57).",
+      "panorama": "/map_images/AREA4/CAM_20260620153757_0168_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 52
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-9",
+      "title": "Comodín 1 9",
+      "description": "Punto 9 de la secuencia (15:38:09).",
+      "panorama": "/map_images/AREA4/CAM_20260620153809_0169_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 48
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-10",
+      "title": "Comodín 1 10",
+      "description": "Punto 10 de la secuencia (15:38:21).",
+      "panorama": "/map_images/AREA4/CAM_20260620153821_0170_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 44
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-11",
+      "title": "Comodín 1 11",
+      "description": "Punto 11 de la secuencia (15:38:33).",
+      "panorama": "/map_images/AREA4/CAM_20260620153833_0171_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 40
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-12",
+      "title": "Comodín 1 12",
+      "description": "Punto 12 de la secuencia (15:38:44).",
+      "panorama": "/map_images/AREA4/CAM_20260620153844_0172_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 36
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-13",
+      "title": "Comodín 1 13",
+      "description": "Punto 13 de la secuencia (15:38:56).",
+      "panorama": "/map_images/AREA4/CAM_20260620153856_0173_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 32
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-14",
+      "title": "Comodín 1 14",
+      "description": "Punto 14 de la secuencia (15:39:08).",
+      "panorama": "/map_images/AREA4/CAM_20260620153908_0174_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 28
+      },
+      "heading": 0
+    },
+    {
+      "id": "4A-15",
+      "title": "Comodín 1 15",
+      "description": "Punto 15 de la secuencia (15:39:19).",
+      "panorama": "/map_images/AREA4/CAM_20260620153919_0175_D.JPG",
+      "position": {
+        "x": 45,
+        "y": 24
+      },
+      "heading": 0
+    }
+  ],
+  "paseo_cipreses": [
+    {
+      "id": "5A-1",
+      "title": "Paseo Cipreses 1",
+      "description": "Punto 1 de la secuencia (16:37:01).",
+      "panorama": "/map_images/AREA5/CAM_20260620163701_0264_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 85
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-2",
+      "title": "Paseo Cipreses 2",
+      "description": "Punto 2 de la secuencia (16:37:13).",
+      "panorama": "/map_images/AREA5/CAM_20260620163713_0265_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 82
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-3",
+      "title": "Paseo Cipreses 3",
+      "description": "Punto 3 de la secuencia (16:37:24).",
+      "panorama": "/map_images/AREA5/CAM_20260620163724_0266_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 79
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-4",
+      "title": "Paseo Cipreses 4",
+      "description": "Punto 4 de la secuencia (16:37:56).",
+      "panorama": "/map_images/AREA5/CAM_20260620163756_0267_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 76
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-5",
+      "title": "Paseo Cipreses 5",
+      "description": "Punto 5 de la secuencia (16:38:07).",
+      "panorama": "/map_images/AREA5/CAM_20260620163807_0268_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 73
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-6",
+      "title": "Paseo Cipreses 6",
+      "description": "Punto 6 de la secuencia (16:38:19).",
+      "panorama": "/map_images/AREA5/CAM_20260620163819_0269_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 70
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-7",
+      "title": "Paseo Cipreses 7",
+      "description": "Punto 7 de la secuencia (16:38:31).",
+      "panorama": "/map_images/AREA5/CAM_20260620163831_0270_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 67
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-8",
+      "title": "Paseo Cipreses 8",
+      "description": "Punto 8 de la secuencia (16:38:43).",
+      "panorama": "/map_images/AREA5/CAM_20260620163843_0271_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 64
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-9",
+      "title": "Paseo Cipreses 9",
+      "description": "Punto 9 de la secuencia (16:38:55).",
+      "panorama": "/map_images/AREA5/CAM_20260620163855_0272_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 61
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-10",
+      "title": "Paseo Cipreses 10",
+      "description": "Punto 10 de la secuencia (16:39:06).",
+      "panorama": "/map_images/AREA5/CAM_20260620163906_0273_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 58
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-11",
+      "title": "Paseo Cipreses 11",
+      "description": "Punto 11 de la secuencia (16:39:18).",
+      "panorama": "/map_images/AREA5/CAM_20260620163918_0274_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 55
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-12",
+      "title": "Paseo Cipreses 12",
+      "description": "Punto 12 de la secuencia (16:39:30).",
+      "panorama": "/map_images/AREA5/CAM_20260620163930_0275_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 52
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-13",
+      "title": "Paseo Cipreses 13",
+      "description": "Punto 13 de la secuencia (16:39:43).",
+      "panorama": "/map_images/AREA5/CAM_20260620163943_0276_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 49
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-14",
+      "title": "Paseo Cipreses 14",
+      "description": "Punto 14 de la secuencia (16:39:54).",
+      "panorama": "/map_images/AREA5/CAM_20260620163954_0277_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 46
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-15",
+      "title": "Paseo Cipreses 15",
+      "description": "Punto 15 de la secuencia (16:40:06).",
+      "panorama": "/map_images/AREA5/CAM_20260620164006_0278_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 43
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-16",
+      "title": "Paseo Cipreses 16",
+      "description": "Punto 16 de la secuencia (16:40:19).",
+      "panorama": "/map_images/AREA5/CAM_20260620164019_0279_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 40
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-17",
+      "title": "Paseo Cipreses 17",
+      "description": "Punto 17 de la secuencia (16:40:30).",
+      "panorama": "/map_images/AREA5/CAM_20260620164030_0280_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 37
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-18",
+      "title": "Paseo Cipreses 18",
+      "description": "Punto 18 de la secuencia (16:40:42).",
+      "panorama": "/map_images/AREA5/CAM_20260620164042_0281_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 34
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-19",
+      "title": "Paseo Cipreses 19",
+      "description": "Punto 19 de la secuencia (16:40:56).",
+      "panorama": "/map_images/AREA5/CAM_20260620164056_0282_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 31
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-20",
+      "title": "Paseo Cipreses 20",
+      "description": "Punto 20 de la secuencia (16:41:07).",
+      "panorama": "/map_images/AREA5/CAM_20260620164107_0283_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 28
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-21",
+      "title": "Paseo Cipreses 21",
+      "description": "Punto 21 de la secuencia (16:41:19).",
+      "panorama": "/map_images/AREA5/CAM_20260620164119_0284_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 25
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-22",
+      "title": "Paseo Cipreses 22",
+      "description": "Punto 22 de la secuencia (16:41:31).",
+      "panorama": "/map_images/AREA5/CAM_20260620164131_0285_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 22
+      },
+      "heading": 0
+    },
+    {
+      "id": "5A-23",
+      "title": "Paseo Cipreses 23",
+      "description": "Punto 23 de la secuencia (16:42:05).",
+      "panorama": "/map_images/AREA5/CAM_20260620164205_0286_D.JPG",
+      "position": {
+        "x": 60,
+        "y": 19
+      },
+      "heading": 0
+    }
+  ],
+  "comoding_2": [
+    {
+      "id": "6A-1",
+      "title": "Comodín 2 1",
+      "description": "Punto 1 de la secuencia (16:23:41).",
+      "panorama": "/map_images/AREA6/CAM_20260620162341_0254_D.JPG",
+      "position": {
+        "x": 92,
+        "y": 80
+      },
+      "heading": 0
+    },
+    {
+      "id": "6A-2",
+      "title": "Comodín 2 2",
+      "description": "Punto 2 de la secuencia (16:23:53).",
+      "panorama": "/map_images/AREA6/CAM_20260620162353_0255_D.JPG",
+      "position": {
+        "x": 92,
+        "y": 74
+      },
+      "heading": 0
+    },
+    {
+      "id": "6A-3",
+      "title": "Comodín 2 3",
+      "description": "Punto 3 de la secuencia (16:24:06).",
+      "panorama": "/map_images/AREA6/CAM_20260620162406_0256_D.JPG",
+      "position": {
+        "x": 92,
+        "y": 68
+      },
+      "heading": 0
+    },
+    {
+      "id": "6A-4",
+      "title": "Comodín 2 4",
+      "description": "Punto 4 de la secuencia (16:24:19).",
+      "panorama": "/map_images/AREA6/CAM_20260620162419_0257_D.JPG",
+      "position": {
+        "x": 92,
+        "y": 62
+      },
+      "heading": 0
+    },
+    {
+      "id": "6A-5",
+      "title": "Comodín 2 5",
+      "description": "Punto 5 de la secuencia (16:24:32).",
+      "panorama": "/map_images/AREA6/CAM_20260620162432_0258_D.JPG",
+      "position": {
+        "x": 92,
+        "y": 56
+      },
+      "heading": 0
+    },
+    {
+      "id": "6A-6",
+      "title": "Comodín 2 6",
+      "description": "Punto 6 de la secuencia (16:24:44).",
+      "panorama": "/map_images/AREA6/CAM_20260620162444_0259_D.JPG",
+      "position": {
+        "x": 92,
+        "y": 50
+      },
+      "heading": 0
+    },
+    {
+      "id": "6A-7",
+      "title": "Comodín 2 7",
+      "description": "Punto 7 de la secuencia (16:24:55).",
+      "panorama": "/map_images/AREA6/CAM_20260620162455_0260_D.JPG",
+      "position": {
+        "x": 92,
+        "y": 44
+      },
+      "heading": 0
+    },
+    {
+      "id": "6A-8",
+      "title": "Comodín 2 8",
+      "description": "Punto 8 de la secuencia (16:25:07).",
+      "panorama": "/map_images/AREA6/CAM_20260620162507_0261_D.JPG",
+      "position": {
+        "x": 92,
+        "y": 38
+      },
+      "heading": 0
+    },
+    {
+      "id": "6A-9",
+      "title": "Comodín 2 9",
+      "description": "Punto 9 de la secuencia (16:25:18).",
+      "panorama": "/map_images/AREA6/CAM_20260620162518_0262_D.JPG",
+      "position": {
+        "x": 92,
+        "y": 32
+      },
+      "heading": 0
+    },
+    {
+      "id": "6A-10",
+      "title": "Comodín 2 10",
+      "description": "Punto 10 de la secuencia (16:25:32).",
+      "panorama": "/map_images/AREA6/CAM_20260620162532_0263_D.JPG",
+      "position": {
+        "x": 92,
+        "y": 26
+      },
+      "heading": 0
+    }
+  ],
+  "area7": [
+    {
+      "id": "7A-1",
+      "title": "Sección Desconocida 3 - 1",
+      "description": "Punto 1 de la secuencia de imágenes extra (Seq 0176).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620154933_0176_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 12
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-2",
+      "title": "Sección Desconocida 3 - 2",
+      "description": "Punto 2 de la secuencia de imágenes extra (Seq 0177).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620154945_0177_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 12
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-3",
+      "title": "Sección Desconocida 3 - 3",
+      "description": "Punto 3 de la secuencia de imágenes extra (Seq 0178).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620154957_0178_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 14.05
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-4",
+      "title": "Sección Desconocida 3 - 4",
+      "description": "Punto 4 de la secuencia de imágenes extra (Seq 0179).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155009_0179_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 14.05
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-5",
+      "title": "Sección Desconocida 3 - 5",
+      "description": "Punto 5 de la secuencia de imágenes extra (Seq 0180).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155021_0180_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 16.11
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-6",
+      "title": "Sección Desconocida 3 - 6",
+      "description": "Punto 6 de la secuencia de imágenes extra (Seq 0181).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155033_0181_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 16.11
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-7",
+      "title": "Sección Desconocida 3 - 7",
+      "description": "Punto 7 de la secuencia de imágenes extra (Seq 0182).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155045_0182_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 18.16
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-8",
+      "title": "Sección Desconocida 3 - 8",
+      "description": "Punto 8 de la secuencia de imágenes extra (Seq 0183).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155058_0183_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 18.16
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-9",
+      "title": "Sección Desconocida 3 - 9",
+      "description": "Punto 9 de la secuencia de imágenes extra (Seq 0184).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155128_0184_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 20.21
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-10",
+      "title": "Sección Desconocida 3 - 10",
+      "description": "Punto 10 de la secuencia de imágenes extra (Seq 0185).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155144_0185_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 20.21
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-11",
+      "title": "Sección Desconocida 3 - 11",
+      "description": "Punto 11 de la secuencia de imágenes extra (Seq 0186).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155156_0186_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 22.26
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-12",
+      "title": "Sección Desconocida 3 - 12",
+      "description": "Punto 12 de la secuencia de imágenes extra (Seq 0187).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155208_0187_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 22.26
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-13",
+      "title": "Sección Desconocida 3 - 13",
+      "description": "Punto 13 de la secuencia de imágenes extra (Seq 0188).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155220_0188_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 24.32
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-14",
+      "title": "Sección Desconocida 3 - 14",
+      "description": "Punto 14 de la secuencia de imágenes extra (Seq 0189).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155232_0189_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 24.32
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-15",
+      "title": "Sección Desconocida 3 - 15",
+      "description": "Punto 15 de la secuencia de imágenes extra (Seq 0190).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155245_0190_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 26.37
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-16",
+      "title": "Sección Desconocida 3 - 16",
+      "description": "Punto 16 de la secuencia de imágenes extra (Seq 0191).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155256_0191_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 26.37
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-17",
+      "title": "Sección Desconocida 3 - 17",
+      "description": "Punto 17 de la secuencia de imágenes extra (Seq 0192).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155308_0192_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 28.42
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-18",
+      "title": "Sección Desconocida 3 - 18",
+      "description": "Punto 18 de la secuencia de imágenes extra (Seq 0193).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155320_0193_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 28.42
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-19",
+      "title": "Sección Desconocida 3 - 19",
+      "description": "Punto 19 de la secuencia de imágenes extra (Seq 0194).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155332_0194_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 30.47
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-20",
+      "title": "Sección Desconocida 3 - 20",
+      "description": "Punto 20 de la secuencia de imágenes extra (Seq 0195).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155729_0195_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 30.47
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-21",
+      "title": "Sección Desconocida 3 - 21",
+      "description": "Punto 21 de la secuencia de imágenes extra (Seq 0196).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155741_0196_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 32.53
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-22",
+      "title": "Sección Desconocida 3 - 22",
+      "description": "Punto 22 de la secuencia de imágenes extra (Seq 0197).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155753_0197_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 32.53
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-23",
+      "title": "Sección Desconocida 3 - 23",
+      "description": "Punto 23 de la secuencia de imágenes extra (Seq 0198).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155806_0198_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 34.58
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-24",
+      "title": "Sección Desconocida 3 - 24",
+      "description": "Punto 24 de la secuencia de imágenes extra (Seq 0199).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155819_0199_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 34.58
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-25",
+      "title": "Sección Desconocida 3 - 25",
+      "description": "Punto 25 de la secuencia de imágenes extra (Seq 0200).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155832_0200_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 36.63
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-26",
+      "title": "Sección Desconocida 3 - 26",
+      "description": "Punto 26 de la secuencia de imágenes extra (Seq 0201).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155846_0201_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 36.63
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-27",
+      "title": "Sección Desconocida 3 - 27",
+      "description": "Punto 27 de la secuencia de imágenes extra (Seq 0202).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155858_0202_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 38.68
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-28",
+      "title": "Sección Desconocida 3 - 28",
+      "description": "Punto 28 de la secuencia de imágenes extra (Seq 0203).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155912_0203_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 38.68
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-29",
+      "title": "Sección Desconocida 3 - 29",
+      "description": "Punto 29 de la secuencia de imágenes extra (Seq 0204).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155927_0204_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 40.74
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-30",
+      "title": "Sección Desconocida 3 - 30",
+      "description": "Punto 30 de la secuencia de imágenes extra (Seq 0205).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155941_0205_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 40.74
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-31",
+      "title": "Sección Desconocida 3 - 31",
+      "description": "Punto 31 de la secuencia de imágenes extra (Seq 0206).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620155954_0206_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 42.79
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-32",
+      "title": "Sección Desconocida 3 - 32",
+      "description": "Punto 32 de la secuencia de imágenes extra (Seq 0207).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160008_0207_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 42.79
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-33",
+      "title": "Sección Desconocida 3 - 33",
+      "description": "Punto 33 de la secuencia de imágenes extra (Seq 0208).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160019_0208_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 44.84
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-34",
+      "title": "Sección Desconocida 3 - 34",
+      "description": "Punto 34 de la secuencia de imágenes extra (Seq 0209).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160031_0209_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 44.84
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-35",
+      "title": "Sección Desconocida 3 - 35",
+      "description": "Punto 35 de la secuencia de imágenes extra (Seq 0210).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160044_0210_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 46.89
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-36",
+      "title": "Sección Desconocida 3 - 36",
+      "description": "Punto 36 de la secuencia de imágenes extra (Seq 0211).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160056_0211_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 46.89
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-37",
+      "title": "Sección Desconocida 3 - 37",
+      "description": "Punto 37 de la secuencia de imágenes extra (Seq 0212).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160107_0212_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 48.95
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-38",
+      "title": "Sección Desconocida 3 - 38",
+      "description": "Punto 38 de la secuencia de imágenes extra (Seq 0213).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160706_0213_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 48.95
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-39",
+      "title": "Sección Desconocida 3 - 39",
+      "description": "Punto 39 de la secuencia de imágenes extra (Seq 0214).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160719_0214_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 51
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-40",
+      "title": "Sección Desconocida 3 - 40",
+      "description": "Punto 40 de la secuencia de imágenes extra (Seq 0215).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160731_0215_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 51
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-41",
+      "title": "Sección Desconocida 3 - 41",
+      "description": "Punto 41 de la secuencia de imágenes extra (Seq 0216).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160755_0216_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 53.05
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-42",
+      "title": "Sección Desconocida 3 - 42",
+      "description": "Punto 42 de la secuencia de imágenes extra (Seq 0217).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160807_0217_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 53.05
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-43",
+      "title": "Sección Desconocida 3 - 43",
+      "description": "Punto 43 de la secuencia de imágenes extra (Seq 0218).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160818_0218_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 55.11
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-44",
+      "title": "Sección Desconocida 3 - 44",
+      "description": "Punto 44 de la secuencia de imágenes extra (Seq 0219).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160830_0219_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 55.11
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-45",
+      "title": "Sección Desconocida 3 - 45",
+      "description": "Punto 45 de la secuencia de imágenes extra (Seq 0220).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160843_0220_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 57.16
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-46",
+      "title": "Sección Desconocida 3 - 46",
+      "description": "Punto 46 de la secuencia de imágenes extra (Seq 0221).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160854_0221_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 57.16
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-47",
+      "title": "Sección Desconocida 3 - 47",
+      "description": "Punto 47 de la secuencia de imágenes extra (Seq 0222).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160906_0222_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 59.21
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-48",
+      "title": "Sección Desconocida 3 - 48",
+      "description": "Punto 48 de la secuencia de imágenes extra (Seq 0223).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160919_0223_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 59.21
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-49",
+      "title": "Sección Desconocida 3 - 49",
+      "description": "Punto 49 de la secuencia de imágenes extra (Seq 0224).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160931_0224_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 61.26
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-50",
+      "title": "Sección Desconocida 3 - 50",
+      "description": "Punto 50 de la secuencia de imágenes extra (Seq 0225).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160944_0225_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 61.26
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-51",
+      "title": "Sección Desconocida 3 - 51",
+      "description": "Punto 51 de la secuencia de imágenes extra (Seq 0226).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620160957_0226_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 63.32
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-52",
+      "title": "Sección Desconocida 3 - 52",
+      "description": "Punto 52 de la secuencia de imágenes extra (Seq 0227).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161009_0227_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 63.32
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-53",
+      "title": "Sección Desconocida 3 - 53",
+      "description": "Punto 53 de la secuencia de imágenes extra (Seq 0228).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161021_0228_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 65.37
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-54",
+      "title": "Sección Desconocida 3 - 54",
+      "description": "Punto 54 de la secuencia de imágenes extra (Seq 0229).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161033_0229_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 65.37
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-55",
+      "title": "Sección Desconocida 3 - 55",
+      "description": "Punto 55 de la secuencia de imágenes extra (Seq 0230).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161045_0230_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 67.42
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-56",
+      "title": "Sección Desconocida 3 - 56",
+      "description": "Punto 56 de la secuencia de imágenes extra (Seq 0231).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161056_0231_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 67.42
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-57",
+      "title": "Sección Desconocida 3 - 57",
+      "description": "Punto 57 de la secuencia de imágenes extra (Seq 0232).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161107_0232_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 69.47
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-58",
+      "title": "Sección Desconocida 3 - 58",
+      "description": "Punto 58 de la secuencia de imágenes extra (Seq 0233).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161120_0233_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 69.47
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-59",
+      "title": "Sección Desconocida 3 - 59",
+      "description": "Punto 59 de la secuencia de imágenes extra (Seq 0234).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161131_0234_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 71.53
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-60",
+      "title": "Sección Desconocida 3 - 60",
+      "description": "Punto 60 de la secuencia de imágenes extra (Seq 0235).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161143_0235_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 71.53
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-61",
+      "title": "Sección Desconocida 3 - 61",
+      "description": "Punto 61 de la secuencia de imágenes extra (Seq 0236).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161155_0236_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 73.58
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-62",
+      "title": "Sección Desconocida 3 - 62",
+      "description": "Punto 62 de la secuencia de imágenes extra (Seq 0237).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161206_0237_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 73.58
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-63",
+      "title": "Sección Desconocida 3 - 63",
+      "description": "Punto 63 de la secuencia de imágenes extra (Seq 0238).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161220_0238_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 75.63
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-64",
+      "title": "Sección Desconocida 3 - 64",
+      "description": "Punto 64 de la secuencia de imágenes extra (Seq 0239).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161232_0239_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 75.63
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-65",
+      "title": "Sección Desconocida 3 - 65",
+      "description": "Punto 65 de la secuencia de imágenes extra (Seq 0240).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161245_0240_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 77.68
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-66",
+      "title": "Sección Desconocida 3 - 66",
+      "description": "Punto 66 de la secuencia de imágenes extra (Seq 0241).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161257_0241_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 77.68
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-67",
+      "title": "Sección Desconocida 3 - 67",
+      "description": "Punto 67 de la secuencia de imágenes extra (Seq 0242).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161309_0242_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 79.74
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-68",
+      "title": "Sección Desconocida 3 - 68",
+      "description": "Punto 68 de la secuencia de imágenes extra (Seq 0243).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161320_0243_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 79.74
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-69",
+      "title": "Sección Desconocida 3 - 69",
+      "description": "Punto 69 de la secuencia de imágenes extra (Seq 0244).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161332_0244_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 81.79
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-70",
+      "title": "Sección Desconocida 3 - 70",
+      "description": "Punto 70 de la secuencia de imágenes extra (Seq 0245).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161343_0245_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 81.79
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-71",
+      "title": "Sección Desconocida 3 - 71",
+      "description": "Punto 71 de la secuencia de imágenes extra (Seq 0246).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161355_0246_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 83.84
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-72",
+      "title": "Sección Desconocida 3 - 72",
+      "description": "Punto 72 de la secuencia de imágenes extra (Seq 0247).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161408_0247_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 83.84
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-73",
+      "title": "Sección Desconocida 3 - 73",
+      "description": "Punto 73 de la secuencia de imágenes extra (Seq 0248).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161420_0248_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 85.89
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-74",
+      "title": "Sección Desconocida 3 - 74",
+      "description": "Punto 74 de la secuencia de imágenes extra (Seq 0249).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161433_0249_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 85.89
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-75",
+      "title": "Sección Desconocida 3 - 75",
+      "description": "Punto 75 de la secuencia de imágenes extra (Seq 0250).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161445_0250_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 87.95
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-76",
+      "title": "Sección Desconocida 3 - 76",
+      "description": "Punto 76 de la secuencia de imágenes extra (Seq 0251).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161459_0251_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 87.95
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-77",
+      "title": "Sección Desconocida 3 - 77",
+      "description": "Punto 77 de la secuencia de imágenes extra (Seq 0252).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161511_0252_D.JPG",
+      "position": {
+        "x": 5,
+        "y": 90
+      },
+      "heading": 0
+    },
+    {
+      "id": "7A-78",
+      "title": "Sección Desconocida 3 - 78",
+      "description": "Punto 78 de la secuencia de imágenes extra (Seq 0253).",
+      "panorama": "/map_images/ExtraIMages/CAM_20260620161524_0253_D.JPG",
+      "position": {
+        "x": 8,
+        "y": 90
+      },
+      "heading": 0
+    }
+  ]
+}

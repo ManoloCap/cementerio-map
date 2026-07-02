@@ -1,0 +1,497 @@
+[
+  {
+    "id": "3A-1",
+    "title": "Área 3 - Camino Principal 1",
+    "description": "Punto 1 de la secuencia del camino principal (15:10:42).",
+    "panorama": "/map_images/AREA 3/CAM_20260620151042_0116_D.JPG",
+    "position": {
+      "x": 30,
+      "y": 80
+    },
+    "heading": 0
+  },
+  {
+    "id": "3A-2",
+    "title": "Área 3 - Camino Principal 2",
+    "description": "Punto 2 de la secuencia del camino principal (15:10:55).",
+    "panorama": "/map_images/AREA 3/CAM_20260620151055_0117_D.JPG",
+    "position": {
+      "x": 30,
+      "y": 73.3
+    },
+    "heading": 0
+  },
+  {
+    "id": "3A-3",
+    "title": "Área 3 - Camino Principal 3",
+    "description": "Punto 3 de la secuencia del camino principal (15:11:07).",
+    "panorama": "/map_images/AREA 3/CAM_20260620151107_0118_D.JPG",
+    "position": {
+      "x": 30,
+      "y": 66.7
+    },
+    "heading": 0
+  },
+  {
+    "id": "3A-4",
+    "title": "Área 3 - Camino Principal 4",
+    "description": "Punto 4 de la secuencia del camino principal (15:11:19).",
+    "panorama": "/map_images/AREA 3/CAM_20260620151119_0119_D.JPG",
+    "position": {
+      "x": 30,
+      "y": 60
+    },
+    "heading": 0
+  },
+  {
+    "id": "3A-5",
+    "title": "Área 3 - Camino Principal 5",
+    "description": "Punto 5 de la secuencia del camino principal (15:11:31).",
+    "panorama": "/map_images/AREA 3/CAM_20260620151131_0120_D.JPG",
+    "position": {
+      "x": 30,
+      "y": 53.3
+    },
+    "heading": 0
+  },
+  {
+    "id": "3A-6",
+    "title": "Área 3 - Camino Principal 6",
+    "description": "Punto 6 de la secuencia del camino principal (15:11:43).",
+    "panorama": "/map_images/AREA 3/CAM_20260620151143_0121_D.JPG",
+    "position": {
+      "x": 30,
+      "y": 46.7
+    },
+    "heading": 0
+  },
+  {
+    "id": "3A-7",
+    "title": "Área 3 - Camino Principal 7",
+    "description": "Punto 7 de la secuencia del camino principal (15:11:54).",
+    "panorama": "/map_images/AREA 3/CAM_20260620151154_0122_D.JPG",
+    "position": {
+      "x": 30,
+      "y": 40
+    },
+    "heading": 0
+  },
+  {
+    "id": "3A-8",
+    "title": "Área 3 - Camino Principal 8",
+    "description": "Punto 8 de la secuencia del camino principal (15:12:06).",
+    "panorama": "/map_images/AREA 3/CAM_20260620151206_0123_D.JPG",
+    "position": {
+      "x": 30,
+      "y": 33.3
+    },
+    "heading": 0
+  },
+  {
+    "id": "3A-9",
+    "title": "Área 3 - Camino Principal 9",
+    "description": "Punto 9 de la secuencia del camino principal (15:12:18).",
+    "panorama": "/map_images/AREA 3/CAM_20260620151218_0124_D.JPG",
+    "position": {
+      "x": 30,
+      "y": 26.7
+    },
+    "heading": 0
+  },
+  {
+    "id": "3A-10",
+    "title": "Área 3 - Camino Principal 10",
+    "description": "Punto 10 de la secuencia del camino principal (15:12:30).",
+    "panorama": "/map_images/AREA 3/CAM_20260620151230_0125_D.JPG",
+    "position": {
+      "x": 30,
+      "y": 20
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-1",
+    "title": "Área 3 - Sendero Mausoleos 1",
+    "description": "Punto 1 de la secuencia de mausoleos y senderos (15:21:31).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152131_0126_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 85
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-2",
+    "title": "Área 3 - Sendero Mausoleos 2",
+    "description": "Punto 2 de la secuencia de mausoleos y senderos (15:21:44).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152144_0127_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 80.4
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-3",
+    "title": "Área 3 - Sendero Mausoleos 3",
+    "description": "Punto 3 de la secuencia de mausoleos y senderos (15:21:56).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152156_0128_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 75.7
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-4",
+    "title": "Área 3 - Sendero Mausoleos 4",
+    "description": "Punto 4 de la secuencia de mausoleos y senderos (15:22:08).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152208_0129_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 71.1
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-5",
+    "title": "Área 3 - Sendero Mausoleos 5",
+    "description": "Punto 5 de la secuencia de mausoleos y senderos (15:22:20).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152220_0130_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 66.4
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-6",
+    "title": "Área 3 - Sendero Mausoleos 6",
+    "description": "Punto 6 de la secuencia de mausoleos y senderos (15:22:32).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152232_0131_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 61.8
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-7",
+    "title": "Área 3 - Sendero Mausoleos 7",
+    "description": "Punto 7 de la secuencia de mausoleos y senderos (15:22:46).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152246_0132_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 57.1
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-8",
+    "title": "Área 3 - Sendero Mausoleos 8",
+    "description": "Punto 8 de la secuencia de mausoleos y senderos (15:22:58).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152258_0133_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 52.5
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-9",
+    "title": "Área 3 - Sendero Mausoleos 9",
+    "description": "Punto 9 de la secuencia de mausoleos y senderos (15:23:10).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152310_0134_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 47.9
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-10",
+    "title": "Área 3 - Sendero Mausoleos 10",
+    "description": "Punto 10 de la secuencia de mausoleos y senderos (15:23:22).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152322_0135_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 43.2
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-11",
+    "title": "Área 3 - Sendero Mausoleos 11",
+    "description": "Punto 11 de la secuencia de mausoleos y senderos (15:23:33).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152333_0136_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 38.6
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-12",
+    "title": "Área 3 - Sendero Mausoleos 12",
+    "description": "Punto 12 de la secuencia de mausoleos y senderos (15:23:45).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152345_0137_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 33.9
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-13",
+    "title": "Área 3 - Sendero Mausoleos 13",
+    "description": "Punto 13 de la secuencia de mausoleos y senderos (15:23:57).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152357_0138_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 29.3
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-14",
+    "title": "Área 3 - Sendero Mausoleos 14",
+    "description": "Punto 14 de la secuencia de mausoleos y senderos (15:24:08).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152408_0139_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 24.6
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-15",
+    "title": "Área 3 - Sendero Mausoleos 15",
+    "description": "Punto 15 de la secuencia de mausoleos y senderos (15:24:19).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152419_0140_D.JPG",
+    "position": {
+      "x": 70,
+      "y": 20
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-16",
+    "title": "Área 3 - Sendero Mausoleos 16",
+    "description": "Punto 16 de la secuencia de mausoleos y senderos (15:24:30).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152430_0141_D.JPG",
+    "position": {
+      "x": 73,
+      "y": 20
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-17",
+    "title": "Área 3 - Sendero Mausoleos 17",
+    "description": "Punto 17 de la secuencia de mausoleos y senderos (15:24:42).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152442_0142_D.JPG",
+    "position": {
+      "x": 76,
+      "y": 20
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-18",
+    "title": "Área 3 - Sendero Mausoleos 18",
+    "description": "Punto 18 de la secuencia de mausoleos y senderos (15:24:56).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152456_0143_D.JPG",
+    "position": {
+      "x": 79,
+      "y": 20
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-19",
+    "title": "Área 3 - Sendero Mausoleos 19",
+    "description": "Punto 19 de la secuencia de mausoleos y senderos (15:25:08).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152508_0144_D.JPG",
+    "position": {
+      "x": 82,
+      "y": 20
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-20",
+    "title": "Área 3 - Sendero Mausoleos 20",
+    "description": "Punto 20 de la secuencia de mausoleos y senderos (15:25:21).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152521_0145_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 20
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-21",
+    "title": "Área 3 - Sendero Mausoleos 21",
+    "description": "Punto 21 de la secuencia de mausoleos y senderos (15:25:33).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152533_0146_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 24.3
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-22",
+    "title": "Área 3 - Sendero Mausoleos 22",
+    "description": "Punto 22 de la secuencia de mausoleos y senderos (15:25:50).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152550_0147_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 28.7
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-23",
+    "title": "Área 3 - Sendero Mausoleos 23",
+    "description": "Punto 23 de la secuencia de mausoleos y senderos (15:26:02).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152602_0148_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 33
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-24",
+    "title": "Área 3 - Sendero Mausoleos 24",
+    "description": "Punto 24 de la secuencia de mausoleos y senderos (15:26:15).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152615_0149_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 37.3
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-25",
+    "title": "Área 3 - Sendero Mausoleos 25",
+    "description": "Punto 25 de la secuencia de mausoleos y senderos (15:26:27).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152627_0150_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 41.7
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-26",
+    "title": "Área 3 - Sendero Mausoleos 26",
+    "description": "Punto 26 de la secuencia de mausoleos y senderos (15:26:39).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152639_0151_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 46
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-27",
+    "title": "Área 3 - Sendero Mausoleos 27",
+    "description": "Punto 27 de la secuencia de mausoleos y senderos (15:26:50).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152650_0152_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 50.3
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-28",
+    "title": "Área 3 - Sendero Mausoleos 28",
+    "description": "Punto 28 de la secuencia de mausoleos y senderos (15:27:03).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152703_0153_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 54.7
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-29",
+    "title": "Área 3 - Sendero Mausoleos 29",
+    "description": "Punto 29 de la secuencia de mausoleos y senderos (15:27:15).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152715_0154_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 59
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-30",
+    "title": "Área 3 - Sendero Mausoleos 30",
+    "description": "Punto 30 de la secuencia de mausoleos y senderos (15:27:27).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152727_0155_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 63.3
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-31",
+    "title": "Área 3 - Sendero Mausoleos 31",
+    "description": "Punto 31 de la secuencia de mausoleos y senderos (15:27:39).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152739_0156_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 67.7
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-32",
+    "title": "Área 3 - Sendero Mausoleos 32",
+    "description": "Punto 32 de la secuencia de mausoleos y senderos (15:27:51).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152751_0157_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 72
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-33",
+    "title": "Área 3 - Sendero Mausoleos 33",
+    "description": "Punto 33 de la secuencia de mausoleos y senderos (15:28:04).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152804_0158_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 76.3
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-34",
+    "title": "Área 3 - Sendero Mausoleos 34",
+    "description": "Punto 34 de la secuencia de mausoleos y senderos (15:28:17).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152817_0159_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 80.7
+    },
+    "heading": 0
+  },
+  {
+    "id": "3B-35",
+    "title": "Área 3 - Sendero Mausoleos 35",
+    "description": "Punto 35 de la secuencia de mausoleos y senderos (15:28:30).",
+    "panorama": "/map_images/AREA 3/CAM_20260620152830_0160_D.JPG",
+    "position": {
+      "x": 85,
+      "y": 85
+    },
+    "heading": 0
+  }
+]

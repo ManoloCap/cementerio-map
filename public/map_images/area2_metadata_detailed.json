@@ -1,0 +1,58 @@
+[
+  {
+    "file": "CAM_20260620150948_0112_D.JPG",
+    "createDate": "2026-06-20T21:09:48.000Z",
+    "make": "Osmo",
+    "model": "OQ001",
+    "GimbalRollDegree": 0,
+    "GimbalYawDegree": 0,
+    "GimbalPitchDegree": 0,
+    "FlightRollDegree": 0,
+    "FlightYawDegree": 0,
+    "FlightPitchDegree": 0,
+    "RelativeAltitude": 0,
+    "AbsoluteAltitude": 0
+  },
+  {
+    "file": "CAM_20260620151003_0113_D.JPG",
+    "createDate": "2026-06-20T21:10:03.000Z",
+    "make": "Osmo",
+    "model": "OQ001",
+    "GimbalRollDegree": 0,
+    "GimbalYawDegree": 0,
+    "GimbalPitchDegree": 0,
+    "FlightRollDegree": 0,
+    "FlightYawDegree": 0,
+    "FlightPitchDegree": 0,
+    "RelativeAltitude": 0,
+    "AbsoluteAltitude": 0
+  },
+  {
+    "file": "CAM_20260620151016_0114_D.JPG",
+    "createDate": "2026-06-20T21:10:16.000Z",
+    "make": "Osmo",
+    "model": "OQ001",
+    "GimbalRollDegree": 0,
+    "GimbalYawDegree": 0,
+    "GimbalPitchDegree": 0,
+    "FlightRollDegree": 0,
+    "FlightYawDegree": 0,
+    "FlightPitchDegree": 0,
+    "RelativeAltitude": 0,
+    "AbsoluteAltitude": 0
+  },
+  {
+    "file": "CAM_20260620151029_0115_D.JPG",
+    "createDate": "2026-06-20T21:10:29.000Z",
+    "make": "Osmo",
+    "model": "OQ001",
+    "GimbalRollDegree": 0,
+    "GimbalYawDegree": 0,
+    "GimbalPitchDegree": 0,
+    "FlightRollDegree": 0,
+    "FlightYawDegree": 0,
+    "FlightPitchDegree": 0,
+    "RelativeAltitude": 0,
+    "AbsoluteAltitude": 0
+  }
+]
