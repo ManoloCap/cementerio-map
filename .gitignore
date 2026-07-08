@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local scratch + debug artifacts (never commit)
+NUL
+scratch/
+scripts/output/debug_*.png
+scripts/output/*_preview.png
+docs/image copy 2.png
+docs/image copy 3.png
+docs/image copy 4.png
+docs/*.jpeg
+

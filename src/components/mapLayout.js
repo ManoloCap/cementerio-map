@@ -6,8 +6,122 @@
 //
 // Output positions are in % units (0–100) suitable for absolute CSS positioning.
 
+import { utmToLocal } from '../utils/geo.js'
+
 const DEFAULT_SPACING = 10
 const MARGIN = 10 // % padding from canvas edges
+
+/**
+ * Resolve a point's render position in the map's real-aspect viewBox space.
+ * Prefers real geo (point.geo.utmX/utmY, snapped from the DWG survey),
+ * falling back to the legacy 0-100% position for points/areas that haven't
+ * been snapped to real geometry yet (e.g. unmapped areas, the demo area).
+ * @param {object} point
+ * @param {{viewboxW:number, viewboxH:number}} transform  from computeTransform() in src/utils/geo.js
+ * @returns {{x:number, y:number, hasRealGeo:boolean}}
+ */
+export function resolveRenderPosition(point, transform) {
+  if (point.geo) {
+    const { x, y } = utmToLocal(point.geo.utmX, point.geo.utmY, transform)
+    return { x, y, hasRealGeo: true }
+  }
+  const legacy = point.position || { x: 50, y: 50 }
+  return {
+    x: (legacy.x / 100) * transform.viewboxW,
+    y: (legacy.y / 100) * transform.viewboxH,
+    hasRealGeo: false,
+  }
+}
+
+/**
+ * Monotone-chain convex hull, used to draw a real-shaped area block around
+ * a group of snapped points instead of a hand-guessed rectangle.
+ * @param {{x:number,y:number}[]} points
+ * @returns {{x:number,y:number}[]}
+ */
+export function convexHull(points) {
+  const pts = [...new Map(points.map((p) => [`${p.x},${p.y}`, p])).values()].sort(
+    (a, b) => a.x - b.x || a.y - b.y
+  )
+  if (pts.length <= 2) return pts
+
+  const cross = (o, a, b) => (a.x - o.x) * (b.y - o.y) - (a.y - o.y) * (b.x - o.x)
+
+  const lower = []
+  for (const p of pts) {
+    while (lower.length >= 2 && cross(lower[lower.length - 2], lower[lower.length - 1], p) <= 0) lower.pop()
+    lower.push(p)
+  }
+  const upper = []
+  for (let i = pts.length - 1; i >= 0; i--) {
+    const p = pts[i]
+    while (upper.length >= 2 && cross(upper[upper.length - 2], upper[upper.length - 1], p) <= 0) upper.pop()
+    upper.push(p)
+  }
+  return [...lower.slice(0, -1), ...upper.slice(0, -1)]
+}
+
+/**
+ * Push each hull vertex outward from the polygon's centroid by `amount`,
+ * so an area block drawn around a thin line of points (e.g. a path-snapped
+ * sequence) reads as a visible region instead of a sliver.
+ * @param {{x:number,y:number}[]} points
+ * @param {number} amount
+ */
+export function inflatePolygon(points, amount) {
+  if (points.length < 3) return points
+  const cx = points.reduce((s, p) => s + p.x, 0) / points.length
+  const cy = points.reduce((s, p) => s + p.y, 0) / points.length
+  return points.map((p) => {
+    const dx = p.x - cx
+    const dy = p.y - cy
+    const len = Math.hypot(dx, dy) || 1
+    return { x: p.x + (dx / len) * amount, y: p.y + (dy / len) * amount }
+  })
+}
+
+/**
+ * Centroid of a polygon given as [[x,y], ...] pairs.
+ * @param {number[][]} polygon
+ * @returns {{x:number, y:number}}
+ */
+export function polygonCentroid(polygon) {
+  return {
+    x: polygon.reduce((s, p) => s + p[0], 0) / polygon.length,
+    y: polygon.reduce((s, p) => s + p[1], 0) / polygon.length,
+  }
+}
+
+/**
+ * Distribute `count` positions inside `polygon` along its longest diagonal.
+ * Returns [{x, y}] in the same coordinate space as the polygon vertices.
+ * For thin strip-shaped sections this places points evenly along the spine.
+ * @param {number[][]} polygon  vertices as [[x,y], ...]
+ * @param {number}     count
+ * @returns {{x:number, y:number}[]}
+ */
+export function placePointsInPolygon(polygon, count) {
+  if (count <= 0) return []
+  const cx = polygon.reduce((s, p) => s + p[0], 0) / polygon.length
+  const cy = polygon.reduce((s, p) => s + p[1], 0) / polygon.length
+  if (count === 1) return [{ x: cx, y: cy }]
+
+  // Find the two most-distant vertices to define the spine.
+  let maxDist = 0
+  let pA = polygon[0]
+  let pB = polygon[polygon.length - 1]
+  for (let i = 0; i < polygon.length; i++) {
+    for (let j = i + 1; j < polygon.length; j++) {
+      const d = Math.hypot(polygon[j][0] - polygon[i][0], polygon[j][1] - polygon[i][1])
+      if (d > maxDist) { maxDist = d; pA = polygon[i]; pB = polygon[j] }
+    }
+  }
+
+  return Array.from({ length: count }, (_, i) => {
+    const t = i / (count - 1)
+    return { x: pA[0] + (pB[0] - pA[0]) * t, y: pA[1] + (pB[1] - pA[1]) * t }
+  })
+}
 
 // Pre-defined palette of distinct, cemetery-appropriate colors
 export const PALETTE = [
