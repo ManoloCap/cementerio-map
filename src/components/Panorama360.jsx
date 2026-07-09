@@ -6,6 +6,7 @@
 
 import { useRef, useState, useEffect, useCallback, useMemo } from 'react'
 import CEMETERY_POINTS from './cemetery_points.json'
+import MANIFEST_360 from '../assets/manifest-360.json'
 
 const AREAS = {
   demo: { id: 'demo', color: '#e74c3c' },
@@ -18,6 +19,16 @@ const AREAS = {
   paseo_cipreses: { id: 'paseo_cipreses', color: '#d35400' },
   comoding_2: { id: 'comoding_2', color: '#27ae60' },
   area7: { id: 'area7', color: '#7f8c8d' },
+}
+
+// ─── Firebase Storage URL resolution ───────────────────────────────────
+// cemetery_points.json still carries the original local paths (e.g.
+// '/previews/dji_mimo_..._small.jpg'); we resolve those to their public
+// Firebase Storage URL by matching areaId + point id against the manifest,
+// which is more reliable than trying to match on the local filename.
+function resolvePanoramaUrl(localPath, areaId, pointId) {
+  const entry = MANIFEST_360.panoramas.find(p => p.section === areaId && p.name === `${pointId}.jpg`)
+  return entry ? entry.url : localPath
 }
 
 // ─── Connection & Hotspot Engine ──────────────────────────────────────
@@ -54,6 +65,7 @@ function prepareZones(points, areaId) {
       color: areaColor,
       connections: neighbors.map(n => n.id),
       hotspots,
+      panorama: resolvePanoramaUrl(p.panorama, areaId, p.id),
     }
   })
 }
@@ -91,6 +103,49 @@ function preloadImage(url) {
 
 function preloadAllImages(zones) {
   return Promise.all(zones.filter(z => z.panorama).map(z => preloadImage(z.panorama)))
+}
+
+// ─── ngrok interstitial detection ─────────────────────────────────────
+// ngrok's free-tier anti-bot interstitial returns HTTP 200 with a small
+// text/plain body (containing 'ERR_NGROK_6024') instead of the requested
+// resource on a visitor's first hit. It happens intermittently on
+// sub-resource requests (like Pannellum's panorama <img> loads) even after
+// the main page has already passed the interstitial, so we verify the
+// first panorama is actually reachable before handing control to Pannellum.
+const TUNNEL_HOST_RE = /\.(ngrok-free\.dev|ngrok\.io|ngrok\.app|trycloudflare\.com)$/i
+
+function isTunnelHost() {
+  return typeof window !== 'undefined' && TUNNEL_HOST_RE.test(window.location.hostname)
+}
+
+async function checkPanoramaReachable(url) {
+  try {
+    const res = await fetch(url, { cache: 'no-store' })
+    if (!res.ok) return false
+    const contentType = res.headers.get('content-type') || ''
+    if (contentType.startsWith('image/')) return true
+    const text = await res.text()
+    return !text.includes('ERR_NGROK_6024')
+  } catch {
+    return false
+  }
+}
+
+// Readiness gate run right before Pannellum takes over. We use an <img>
+// element instead of fetch() so CORS is NOT enforced (fetch() would block
+// cross-origin reads from storage.googleapis.com, but <img> loads for
+// display without that check). ngrok's ERR_NGROK_6024 returns a small
+// text/plain body, which the browser tries to decode as an image and
+// fires onerror -- so onerror catches both "ngrok blocked" and "real 403".
+function checkImageLoadable(url) {
+  return new Promise(resolve => {
+    const img = new Image()
+    let settled = false
+    const finish = (ok) => { if (!settled) { settled = true; resolve(ok) } }
+    img.onload = () => finish(true)
+    img.onerror = () => finish(false)
+    img.src = url + (url.includes('?') ? '&' : '?') + '_t=' + Date.now()
+  })
 }
 
 // ─── 360 Viewer Helper ────────────────────────────────────────────────
@@ -155,6 +210,7 @@ function PanoramaViewer({ zone, onNavigate, onExit, zonesList }) {
   const containerRef = useRef()
   const viewerRef = useRef(null)
   const [isTransitioning, setIsTransitioning] = useState(false)
+  const [sceneIssue, setSceneIssue] = useState(false)
   const navigatingRef = useRef(false)
   const pendingOrientationRef = useRef(null)
 
@@ -200,8 +256,14 @@ function PanoramaViewer({ zone, onNavigate, onExit, zonesList }) {
       viewer.on('load', () => {
         setIsTransitioning(false)
         navigatingRef.current = false
+        setSceneIssue(false)
       })
-      viewer.on('error', errMsg => console.error('[Pannellum] Viewer error:', errMsg))
+      viewer.on('error', errMsg => {
+        console.error('[Pannellum] Viewer error:', errMsg)
+        setIsTransitioning(false)
+        navigatingRef.current = false
+        setSceneIssue(true)
+      })
 
       viewerRef.current = viewer
     } else if (viewerRef.current.getScene() !== zoneId) {
@@ -211,6 +273,17 @@ function PanoramaViewer({ zone, onNavigate, onExit, zonesList }) {
         pendingOrientationRef.current = null
       } else {
         viewerRef.current.loadScene(zoneId)
+      }
+    }
+  }, [zoneId])
+
+  const handleRetryScene = useCallback(() => {
+    setSceneIssue(false)
+    if (viewerRef.current) {
+      try {
+        viewerRef.current.loadScene(zoneId)
+      } catch {
+        // ignore
       }
     }
   }, [zoneId])
@@ -253,6 +326,47 @@ function PanoramaViewer({ zone, onNavigate, onExit, zonesList }) {
           </div>
         )}
       </div>
+
+      {sceneIssue && (
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'rgba(10,10,10,0.9)',
+            zIndex: 300,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '16px',
+            textAlign: 'center',
+            padding: '24px',
+            color: 'white',
+            fontFamily: 'system-ui,sans-serif',
+          }}
+        >
+          <div style={{ fontSize: '15px', maxWidth: '320px', lineHeight: 1.5 }}>
+            No se pudo cargar esta vista 360°.
+            <br />
+            Esto puede pasar la primera vez que se abre el enlace de ngrok.
+          </div>
+          <button
+            onClick={handleRetryScene}
+            style={{
+              background: '#3498db',
+              border: 'none',
+              borderRadius: '10px',
+              padding: '12px 26px',
+              color: 'white',
+              fontWeight: 'bold',
+              fontSize: '14px',
+              cursor: 'pointer',
+            }}
+          >
+            Reintentar
+          </button>
+        </div>
+      )}
 
       <div
         style={{
@@ -402,13 +516,159 @@ function PanoramaViewer({ zone, onNavigate, onExit, zonesList }) {
   )
 }
 
+// ─── Initial load overlay (spinner / ngrok-blocked retry) ─────────────
+function LoadOverlay({ state, onRetry, onExit }) {
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        inset: 0,
+        background: '#111',
+        zIndex: 500,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '18px',
+        textAlign: 'center',
+        padding: '24px',
+        color: 'white',
+        fontFamily: 'system-ui,sans-serif',
+      }}
+    >
+      {state === 'checking' ? (
+        <>
+          <div className="pano-spinner" />
+          <div style={{ fontSize: '14px', letterSpacing: '1px', opacity: 0.85 }}>Cargando vista 360°…</div>
+        </>
+      ) : state === 'blocked' ? (
+        <>
+          <div style={{ fontSize: '15px', maxWidth: '320px', lineHeight: 1.5 }}>
+            No se pudo cargar la vista 360°.
+            <br />
+            Esto suele pasar la primera vez que se abre el enlace de ngrok.
+          </div>
+          <button
+            onClick={onRetry}
+            style={{
+              background: '#3498db',
+              border: 'none',
+              borderRadius: '10px',
+              padding: '12px 26px',
+              color: 'white',
+              fontWeight: 'bold',
+              fontSize: '14px',
+              cursor: 'pointer',
+            }}
+          >
+            Click para cargar
+          </button>
+        </>
+      ) : (
+        <>
+          <div style={{ fontSize: '15px', maxWidth: '320px', lineHeight: 1.5 }}>
+            Ocurrió un error al cargar esta vista 360°.
+          </div>
+          <button
+            onClick={onRetry}
+            style={{
+              background: '#3498db',
+              border: 'none',
+              borderRadius: '10px',
+              padding: '12px 26px',
+              color: 'white',
+              fontWeight: 'bold',
+              fontSize: '14px',
+              cursor: 'pointer',
+            }}
+          >
+            Reintentar
+          </button>
+        </>
+      )}
+
+      <button
+        onClick={onExit}
+        style={{
+          position: 'absolute',
+          top: '20px',
+          left: '20px',
+          background: 'rgba(255,255,255,0.1)',
+          border: '2px solid rgba(255,255,255,0.25)',
+          borderRadius: '10px',
+          padding: '9px 18px',
+          color: 'white',
+          cursor: 'pointer',
+          fontSize: '13px',
+          fontWeight: 'bold',
+        }}
+      >
+        ✕ Volver al mapa
+      </button>
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+        .pano-spinner {
+          width: 42px;
+          height: 42px;
+          border: 4px solid rgba(255,255,255,0.15);
+          border-top-color: #3498db;
+          border-radius: 50%;
+          animation: pano-spin 0.8s linear infinite;
+        }
+        @keyframes pano-spin {
+          to { transform: rotate(360deg); }
+        }
+      `,
+        }}
+      />
+    </div>
+  )
+}
+
+const MIN_SPINNER_MS = 500
+
 export default function Panorama360({ onExit }) {
   const zones = useMemo(() => prepareAllZones(CEMETERY_POINTS), [])
-  const [selectedZone, setSelectedZone] = useState(() => zones[0] || null)
+  const [selectedZone, setSelectedZone] = useState(() => {
+    const params = new URLSearchParams(window.location.search)
+    const pointId = params.get('point')
+    if (pointId) {
+      const found = zones.find(z => z.id === pointId)
+      if (found) return found
+    }
+    return zones[0] || null
+  })
+  const [retryCount, setRetryCount] = useState(0)
 
+  // Sync selectedZone to URL search parameters
   useEffect(() => {
-    preloadAllImages(zones)
-  }, [zones])
+    if (selectedZone) {
+      const url = new URL(window.location.href)
+      if (url.searchParams.get('point') !== selectedZone.id) {
+        url.searchParams.set('point', selectedZone.id)
+        window.history.replaceState({}, '', url.pathname + url.search)
+      }
+    }
+  }, [selectedZone])
+
+  // Only preload the active zone and its connected neighbors
+  useEffect(() => {
+    if (!selectedZone) return
+
+    // 1. Immediately preload the active panorama
+    preloadImage(selectedZone.panorama)
+
+    // 2. Preload neighboring panoramas (hotspot targets)
+    const neighborIds = selectedZone.connections || []
+    neighborIds.forEach(id => {
+      const neighbor = zones.find(z => z.id === id)
+      if (neighbor && neighbor.panorama) {
+        preloadImage(neighbor.panorama)
+      }
+    })
+  }, [selectedZone, zones])
 
   const handleNavigate = useCallback(
     targetId => {
@@ -426,5 +686,18 @@ export default function Panorama360({ onExit }) {
     )
   }
 
-  return <PanoramaViewer zone={selectedZone} onNavigate={handleNavigate} onExit={onExit} zonesList={zones} />
+  // Hand off directly to Pannellum. The viewer's own 'error' handler will
+  // show the retry overlay if any scene fails to load (covers ngrok 6024
+  // first-hit, expired signed URLs, real 404s, etc).
+  return (
+    <div style={{ width: '100%', height: '100%', position: 'relative', background: '#000' }}>
+      <PanoramaViewer
+        key={`${selectedZone.id}-${retryCount}`}
+        zone={selectedZone}
+        onNavigate={handleNavigate}
+        onExit={onExit}
+        zonesList={zones}
+      />
+    </div>
+  )
 }

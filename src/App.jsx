@@ -9,11 +9,23 @@ const TABS = [
 ]
 
 function App() {
-  const [view, setView] = useState('map')
+  const [view, setView] = useState(() => {
+    const params = new URLSearchParams(window.location.search)
+    return params.has('point') ? '360' : 'map'
+  })
+
+  const handleSetView = (newView) => {
+    setView(newView)
+    if (newView === 'map') {
+      const url = new URL(window.location.href)
+      url.searchParams.delete('point')
+      window.history.replaceState({}, '', url.pathname + url.search)
+    }
+  }
 
   return (
     <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
-      {view === 'map' ? <CemeteryMap2D /> : <Panorama360 onExit={() => setView('map')} />}
+      {view === 'map' ? <CemeteryMap2D /> : <Panorama360 onExit={() => handleSetView('map')} />}
 
       <div
         style={{
@@ -34,7 +46,7 @@ function App() {
         {TABS.map(tab => (
           <button
             key={tab.id}
-            onClick={() => setView(tab.id)}
+            onClick={() => handleSetView(tab.id)}
             style={{
               background: view === tab.id ? '#2c2c2c' : 'transparent',
               border: 'none',
