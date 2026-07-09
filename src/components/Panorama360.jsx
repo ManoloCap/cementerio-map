@@ -629,9 +629,13 @@ function LoadOverlay({ state, onRetry, onExit }) {
 
 const MIN_SPINNER_MS = 500
 
-export default function Panorama360({ onExit }) {
+export default function Panorama360({ onExit, initialPoint }) {
   const zones = useMemo(() => prepareAllZones(CEMETERY_POINTS), [])
   const [selectedZone, setSelectedZone] = useState(() => {
+    if (initialPoint) {
+      const found = zones.find(z => z.id === initialPoint.id)
+      if (found) return found
+    }
     const params = new URLSearchParams(window.location.search)
     const pointId = params.get('point')
     if (pointId) {

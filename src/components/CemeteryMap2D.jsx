@@ -7,11 +7,52 @@
 // Current scope: detailed filled polygons + name labels + legend.
 // Next: overlay cemetery points per section, then 360 viewer links.
 
-import { useMemo, useState, useRef } from 'react'
+import { useMemo, useState, useRef, useEffect } from 'react'
 import sectionsData from '../data/sections2d.json'
 import overlays from '../data/overlays2d.json'
+import CEMETERY_POINTS from './cemetery_points.json'
 
 const { sections } = sectionsData
+
+// cemetery_points.json keys don't line up 1:1 with sections2d.json ids
+// (naming drifted between the old TerrainMap data model and the new traced
+// polygons), and one section (seccion_3b) absorbs two point-file keys.
+// "demo" has no traced polygon, so it never surfaces in section view.
+const SECTION_TO_AREAS = {
+  cipreses: ['cipreses'],
+  bugambilias: ['bugambilias'],
+  comodin_1: ['comoding_1'],
+  comodin_2: ['comoding_2'],
+  encinos: ['encinos'],
+  paseo_cipreses: ['paseo_cipreses'],
+  area_7: ['area7'],
+  seccion_3b: ['unknown_section_1', 'unknown_section_2'],
+}
+
+function sectionBBox(section) {
+  const pts = section.polygons.flat()
+  const xs = pts.map(p => p[0])
+  const ys = pts.map(p => p[1])
+  return { x0: Math.min(...xs), x1: Math.max(...xs), y0: Math.min(...ys), y1: Math.max(...ys) }
+}
+
+// cemetery_points.json positions are 0-100 percentages local to each point's
+// own section (a leftover placeholder layout from the old data model), so we
+// project them onto the traced polygon's own bounding box.
+function sectionPoints(section) {
+  const areaIds = SECTION_TO_AREAS[section.id] || []
+  const bbox = sectionBBox(section)
+  return areaIds.flatMap(areaId =>
+    (CEMETERY_POINTS[areaId] || []).map(p => ({
+      ...p,
+      areaId,
+      mapPos: [
+        bbox.x0 + (p.position.x / 100) * (bbox.x1 - bbox.x0),
+        bbox.y0 + (p.position.y / 100) * (bbox.y1 - bbox.y0),
+      ],
+    }))
+  )
+}
 
 // viewBox covers sections plus the property perimeter / próximamente fan
 const allPts = [
@@ -31,8 +72,28 @@ const VB_H = by1 - by0 + PAD * 2
 const VIEWBOX = `${VB_X} ${VB_Y} ${VB_W} ${VB_H}`
 
 const MIN_SCALE = 1
-const MAX_SCALE = 4
+const MAX_SCALE = 8 // must comfortably exceed the largest computeSectionTransform() fit-scale
 const clamp = (v, min, max) => Math.min(max, Math.max(min, v))
+
+const SECTION_VIEW_PAD = 20
+
+// Fit a section's bbox (+ padding) into the viewBox, centered -- same
+// translate(x y) scale(scale) shape the pinch-zoom transform state uses.
+function computeSectionTransform(section) {
+  const { x0, x1, y0, y1 } = sectionBBox(section)
+  const bx0 = x0 - SECTION_VIEW_PAD
+  const bx1 = x1 + SECTION_VIEW_PAD
+  const by0 = y0 - SECTION_VIEW_PAD
+  const by1 = y1 + SECTION_VIEW_PAD
+  const scale = Math.min(VB_W / (bx1 - bx0), VB_H / (by1 - by0))
+  const cx = (bx0 + bx1) / 2
+  const cy = (by0 + by1) / 2
+  return {
+    scale,
+    x: VB_X + VB_W / 2 - scale * cx,
+    y: VB_Y + VB_H / 2 - scale * cy,
+  }
+}
 
 // Darken a #rrggbb color by `f` (0..1) for strokes/labels.
 function darken(hex, f = 0.45) {
@@ -258,8 +319,9 @@ const RESPONSIVE_CSS = `
   }
 `
 
-export default function CemeteryMap2D() {
+export default function CemeteryMap2D({ selectedSection = null, onSelectSection, onSelectPoint }) {
   const [hovered, setHovered] = useState(null)
+  const [hoveredPoint, setHoveredPoint] = useState(null)
 
   const labeled = useMemo(() => {
     const items = sections.map(s => ({
@@ -270,6 +332,12 @@ export default function CemeteryMap2D() {
     separateLabels(items)
     return items
   }, [])
+
+  const activeSection = useMemo(
+    () => (selectedSection ? sections.find(s => s.id === selectedSection) : null),
+    [selectedSection]
+  )
+  const activePoints = useMemo(() => (activeSection ? sectionPoints(activeSection) : []), [activeSection])
 
   const extras = useMemo(
     () => ({
@@ -290,6 +358,12 @@ export default function CemeteryMap2D() {
   const pan = useRef(null) // {startClientX, startClientY, startTx, startTy}
   const lastTap = useRef(0)
   const [transform, setTransform] = useState({ scale: 1, x: 0, y: 0 })
+
+  // Zoom to fit the selected section (or back out to the full map) whenever
+  // the selection changes; manual pinch/pan still free-runs from that point.
+  useEffect(() => {
+    setTransform(activeSection ? computeSectionTransform(activeSection) : { scale: 1, x: 0, y: 0 })
+  }, [activeSection])
 
   // uniform client-px -> viewBox-unit factor for the svg's current on-screen
   // size, accounting for the letterboxing from preserveAspectRatio="meet"
@@ -312,7 +386,7 @@ export default function CemeteryMap2D() {
   }
 
   function resetTransform() {
-    setTransform({ scale: 1, x: 0, y: 0 })
+    setTransform(activeSection ? computeSectionTransform(activeSection) : { scale: 1, x: 0, y: 0 })
   }
 
   function zoomBy(factor) {
@@ -393,6 +467,9 @@ export default function CemeteryMap2D() {
   }
 
   const groupTransform = `translate(${transform.x} ${transform.y}) scale(${transform.scale})`
+  // Suppress the CSS transition while an active drag/pinch is driving the
+  // transform every frame -- only the programmatic section-view jump animates.
+  const groupStyle = { transition: pointers.current.size === 0 ? 'transform 250ms ease-out' : 'none' }
 
   return (
     <div style={styles.page}>
@@ -405,6 +482,16 @@ export default function CemeteryMap2D() {
       <div className="cm2d-body">
         <div className="cm2d-map-wrap">
           <div className="cm2d-zoom-controls">
+            {activeSection && (
+              <button
+                type="button"
+                className="cm2d-zoom-btn cm2d-back-btn"
+                aria-label="Volver al mapa completo"
+                onClick={() => onSelectSection?.(null)}
+              >
+                ←
+              </button>
+            )}
             <button
               type="button"
               className="cm2d-zoom-btn"
@@ -433,7 +520,7 @@ export default function CemeteryMap2D() {
             onPointerUp={handlePointerUp}
             onPointerCancel={handlePointerUp}
           >
-          <g transform={groupTransform}>
+          <g transform={groupTransform} style={groupStyle}>
           {/* property perimeter — solid line */}
           <path
             d={extras.perimeterPath}
@@ -528,8 +615,8 @@ export default function CemeteryMap2D() {
           </text>
 
           {labeled.map(s => {
-            const active = hovered === s.id
-            const dim = hovered && !active
+            const active = selectedSection ? s.id === selectedSection : hovered === s.id
+            const dim = selectedSection ? s.id !== selectedSection : hovered && !active
             return (
               <g
                 key={s.id}
@@ -540,7 +627,7 @@ export default function CemeteryMap2D() {
                 <path
                   d={s.path}
                   fill={s.color}
-                  fillOpacity={active ? 1 : dim ? 0.4 : 0.9}
+                  fillOpacity={active ? 1 : dim ? (selectedSection ? 0.15 : 0.4) : 0.9}
                   stroke={active ? darken(s.color) : '#faf9f6'}
                   strokeWidth={1.2}
                   strokeLinejoin="miter"
@@ -550,7 +637,7 @@ export default function CemeteryMap2D() {
             )
           })}
           {labeled.map(s => {
-            const dim = hovered && hovered !== s.id
+            const dim = selectedSection ? s.id !== selectedSection : hovered && hovered !== s.id
             return (
               <text
                 key={`label-${s.id}`}
@@ -566,7 +653,7 @@ export default function CemeteryMap2D() {
                   stroke: '#faf9f6',
                   strokeWidth: 1.6,
                   strokeLinejoin: 'round',
-                  opacity: dim ? 0.25 : 1,
+                  opacity: dim ? (selectedSection ? 0.15 : 0.25) : 1,
                   pointerEvents: 'none',
                   transition: 'opacity 160ms',
                   fontFamily: 'inherit',
@@ -576,6 +663,36 @@ export default function CemeteryMap2D() {
               </text>
             )
           })}
+          {activeSection && (
+            <g>
+              {activePoints.map(p => {
+                const isHovered = hoveredPoint === p.id
+                const r = (isHovered ? 8 : 6) / transform.scale
+                const hitR = 18 / transform.scale
+                return (
+                  <g
+                    key={p.id}
+                    onPointerDown={e => e.stopPropagation()}
+                    onPointerEnter={() => setHoveredPoint(p.id)}
+                    onPointerLeave={() => setHoveredPoint(null)}
+                    onClick={() => onSelectPoint?.(p)}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    <circle cx={p.mapPos[0]} cy={p.mapPos[1]} r={hitR} fill="transparent" />
+                    <circle
+                      cx={p.mapPos[0]}
+                      cy={p.mapPos[1]}
+                      r={r}
+                      fill={activeSection.color}
+                      stroke="#fff"
+                      strokeWidth={1.2 / transform.scale}
+                      style={{ transition: 'r 120ms' }}
+                    />
+                  </g>
+                )
+              })}
+            </g>
+          )}
           </g>
           </svg>
         </div>
@@ -586,9 +703,11 @@ export default function CemeteryMap2D() {
             key={s.id}
             onMouseEnter={() => setHovered(s.id)}
             onMouseLeave={() => setHovered(null)}
+            onClick={() => onSelectSection?.(s.id)}
             style={{
               ...styles.legendRow,
-              background: hovered === s.id ? '#f0efeb' : 'transparent',
+              background: selectedSection === s.id ? '#f0efeb' : hovered === s.id ? '#f6f5f1' : 'transparent',
+              fontWeight: selectedSection === s.id ? 700 : 400,
             }}
           >
             <span style={{ ...styles.swatch, background: s.color, borderColor: darken(s.color, 0.3) }} />

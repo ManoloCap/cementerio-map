@@ -1,1179 +1,1179 @@
 {
   "bucket": "cementeriojardinesdelapaz",
-  "baseUrl": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/",
-  "generatedAt": "2026-07-09T03:04:41.826Z",
+  "baseUrl": "https://storage.googleapis.com/cementeriojardinesdelapaz/o/",
+  "generatedAt": "2026-07-09T03:43:15.526Z",
   "sections": {
     "demo": {
-      "placeholder": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fdemo%2F.keep?alt=media"
+      "placeholder": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/demo/.keep"
     },
     "cipreses": {
-      "placeholder": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F.keep?alt=media"
+      "placeholder": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/.keep"
     },
     "bugambilias": {
-      "placeholder": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F.keep?alt=media"
+      "placeholder": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/.keep"
     },
     "comoding_1": {
-      "placeholder": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F.keep?alt=media"
+      "placeholder": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/.keep"
     },
     "comoding_2": {
-      "placeholder": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_2%2F.keep?alt=media"
+      "placeholder": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_2/.keep"
     },
     "encinos": {
-      "placeholder": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F.keep?alt=media"
+      "placeholder": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/.keep"
     },
     "paseo_cipreses": {
-      "placeholder": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F.keep?alt=media"
+      "placeholder": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/.keep"
     },
     "area7": {
-      "placeholder": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F.keep?alt=media"
+      "placeholder": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/.keep"
     },
     "unknown_section_1": {
-      "placeholder": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F.keep?alt=media"
+      "placeholder": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/.keep"
     },
     "unknown_section_2": {
-      "placeholder": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F.keep?alt=media"
+      "placeholder": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/.keep"
     }
   },
   "panoramas": [
     {
       "section": "demo",
       "name": "A.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fdemo%2FA.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/demo/A.jpg"
     },
     {
       "section": "demo",
       "name": "B.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fdemo%2FB.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/demo/B.jpg"
     },
     {
       "section": "demo",
       "name": "C.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fdemo%2FC.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/demo/C.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-1.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-1.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-1.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-2.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-2.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-2.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-3.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-3.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-3.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-4.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-4.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-4.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-5.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-5.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-5.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-6.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-6.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-6.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-7.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-7.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-7.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-8.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-8.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-8.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-9.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-9.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-9.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-10.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-10.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-10.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-11.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-11.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-11.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-12.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-12.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-12.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-13.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-13.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-13.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-14.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-14.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-14.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-15.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-15.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-15.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-16.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-16.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-16.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-17.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-17.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-17.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-18.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-18.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-18.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-19.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-19.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-19.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-20.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-20.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-20.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-21.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-21.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-21.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-22.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-22.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-22.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-23.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-23.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-23.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-24.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-24.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-24.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-25.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-25.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-25.jpg"
     },
     {
       "section": "cipreses",
       "name": "1A-26.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcipreses%2F1A-26.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/cipreses/1A-26.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-1.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-1.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-1.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-2.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-2.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-2.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-3.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-3.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-3.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-4.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-4.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-4.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-5.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-5.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-5.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-6.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-6.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-6.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-7.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-7.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-7.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-8.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-8.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-8.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-9.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-9.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-9.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-10.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-10.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-10.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-11.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-11.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-11.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-12.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-12.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-12.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-13.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-13.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-13.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-14.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-14.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-14.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-15.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-15.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-15.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-16.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-16.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-16.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-17.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-17.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-17.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-18.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-18.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-18.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-19.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-19.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-19.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-20.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-20.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-20.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-21.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-21.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-21.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-22.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-22.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-22.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-23.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-23.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-23.jpg"
     },
     {
       "section": "bugambilias",
       "name": "1B-24.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fbugambilias%2F1B-24.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/bugambilias/1B-24.jpg"
     },
     {
       "section": "encinos",
       "name": "2A-1.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F2A-1.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/2A-1.jpg"
     },
     {
       "section": "encinos",
       "name": "2A-2.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F2A-2.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/2A-2.jpg"
     },
     {
       "section": "encinos",
       "name": "2A-3.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F2A-3.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/2A-3.jpg"
     },
     {
       "section": "encinos",
       "name": "2A-4.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F2A-4.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/2A-4.jpg"
     },
     {
       "section": "encinos",
       "name": "3A-1.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F3A-1.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/3A-1.jpg"
     },
     {
       "section": "encinos",
       "name": "3A-2.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F3A-2.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/3A-2.jpg"
     },
     {
       "section": "encinos",
       "name": "3A-3.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F3A-3.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/3A-3.jpg"
     },
     {
       "section": "encinos",
       "name": "3A-4.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F3A-4.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/3A-4.jpg"
     },
     {
       "section": "encinos",
       "name": "3A-5.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F3A-5.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/3A-5.jpg"
     },
     {
       "section": "encinos",
       "name": "3A-6.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F3A-6.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/3A-6.jpg"
     },
     {
       "section": "encinos",
       "name": "3A-7.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F3A-7.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/3A-7.jpg"
     },
     {
       "section": "encinos",
       "name": "3A-8.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F3A-8.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/3A-8.jpg"
     },
     {
       "section": "encinos",
       "name": "3A-9.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F3A-9.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/3A-9.jpg"
     },
     {
       "section": "encinos",
       "name": "3A-10.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fencinos%2F3A-10.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/encinos/3A-10.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-1.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-1.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-1.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-2.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-2.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-2.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-3.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-3.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-3.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-4.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-4.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-4.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-5.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-5.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-5.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-6.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-6.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-6.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-7.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-7.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-7.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-8.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-8.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-8.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-9.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-9.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-9.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-10.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-10.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-10.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-11.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-11.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-11.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-12.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-12.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-12.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-13.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-13.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-13.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-14.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-14.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-14.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-15.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-15.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-15.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-16.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-16.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-16.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-17.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-17.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-17.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-18.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-18.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-18.jpg"
     },
     {
       "section": "unknown_section_1",
       "name": "3B-19.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_1%2F3B-19.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_1/3B-19.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-20.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-20.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-20.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-21.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-21.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-21.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-22.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-22.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-22.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-23.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-23.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-23.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-24.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-24.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-24.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-25.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-25.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-25.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-26.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-26.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-26.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-27.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-27.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-27.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-28.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-28.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-28.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-29.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-29.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-29.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-30.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-30.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-30.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-31.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-31.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-31.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-32.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-32.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-32.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-33.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-33.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-33.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-34.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-34.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-34.jpg"
     },
     {
       "section": "unknown_section_2",
       "name": "3B-35.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Funknown_section_2%2F3B-35.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/unknown_section_2/3B-35.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-1.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-1.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-1.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-2.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-2.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-2.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-3.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-3.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-3.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-4.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-4.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-4.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-5.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-5.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-5.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-6.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-6.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-6.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-7.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-7.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-7.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-8.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-8.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-8.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-9.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-9.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-9.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-10.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-10.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-10.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-11.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-11.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-11.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-12.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-12.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-12.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-13.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-13.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-13.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-14.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-14.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-14.jpg"
     },
     {
       "section": "comoding_1",
       "name": "4A-15.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_1%2F4A-15.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_1/4A-15.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-1.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-1.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-1.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-2.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-2.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-2.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-3.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-3.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-3.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-4.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-4.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-4.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-5.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-5.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-5.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-6.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-6.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-6.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-7.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-7.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-7.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-8.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-8.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-8.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-9.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-9.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-9.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-10.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-10.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-10.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-11.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-11.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-11.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-12.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-12.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-12.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-13.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-13.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-13.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-14.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-14.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-14.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-15.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-15.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-15.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-16.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-16.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-16.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-17.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-17.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-17.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-18.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-18.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-18.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-19.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-19.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-19.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-20.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-20.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-20.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-21.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-21.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-21.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-22.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-22.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-22.jpg"
     },
     {
       "section": "paseo_cipreses",
       "name": "5A-23.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fpaseo_cipreses%2F5A-23.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/paseo_cipreses/5A-23.jpg"
     },
     {
       "section": "comoding_2",
       "name": "6A-1.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_2%2F6A-1.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_2/6A-1.jpg"
     },
     {
       "section": "comoding_2",
       "name": "6A-2.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_2%2F6A-2.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_2/6A-2.jpg"
     },
     {
       "section": "comoding_2",
       "name": "6A-3.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_2%2F6A-3.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_2/6A-3.jpg"
     },
     {
       "section": "comoding_2",
       "name": "6A-4.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_2%2F6A-4.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_2/6A-4.jpg"
     },
     {
       "section": "comoding_2",
       "name": "6A-5.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_2%2F6A-5.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_2/6A-5.jpg"
     },
     {
       "section": "comoding_2",
       "name": "6A-6.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_2%2F6A-6.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_2/6A-6.jpg"
     },
     {
       "section": "comoding_2",
       "name": "6A-7.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_2%2F6A-7.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_2/6A-7.jpg"
     },
     {
       "section": "comoding_2",
       "name": "6A-8.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_2%2F6A-8.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_2/6A-8.jpg"
     },
     {
       "section": "comoding_2",
       "name": "6A-9.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_2%2F6A-9.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_2/6A-9.jpg"
     },
     {
       "section": "comoding_2",
       "name": "6A-10.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Fcomoding_2%2F6A-10.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/comoding_2/6A-10.jpg"
     },
     {
       "section": "area7",
       "name": "7A-1.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-1.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-1.jpg"
     },
     {
       "section": "area7",
       "name": "7A-2.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-2.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-2.jpg"
     },
     {
       "section": "area7",
       "name": "7A-3.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-3.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-3.jpg"
     },
     {
       "section": "area7",
       "name": "7A-4.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-4.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-4.jpg"
     },
     {
       "section": "area7",
       "name": "7A-5.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-5.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-5.jpg"
     },
     {
       "section": "area7",
       "name": "7A-6.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-6.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-6.jpg"
     },
     {
       "section": "area7",
       "name": "7A-7.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-7.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-7.jpg"
     },
     {
       "section": "area7",
       "name": "7A-8.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-8.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-8.jpg"
     },
     {
       "section": "area7",
       "name": "7A-9.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-9.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-9.jpg"
     },
     {
       "section": "area7",
       "name": "7A-10.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-10.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-10.jpg"
     },
     {
       "section": "area7",
       "name": "7A-11.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-11.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-11.jpg"
     },
     {
       "section": "area7",
       "name": "7A-12.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-12.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-12.jpg"
     },
     {
       "section": "area7",
       "name": "7A-13.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-13.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-13.jpg"
     },
     {
       "section": "area7",
       "name": "7A-14.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-14.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-14.jpg"
     },
     {
       "section": "area7",
       "name": "7A-15.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-15.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-15.jpg"
     },
     {
       "section": "area7",
       "name": "7A-16.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-16.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-16.jpg"
     },
     {
       "section": "area7",
       "name": "7A-17.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-17.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-17.jpg"
     },
     {
       "section": "area7",
       "name": "7A-18.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-18.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-18.jpg"
     },
     {
       "section": "area7",
       "name": "7A-19.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-19.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-19.jpg"
     },
     {
       "section": "area7",
       "name": "7A-20.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-20.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-20.jpg"
     },
     {
       "section": "area7",
       "name": "7A-21.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-21.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-21.jpg"
     },
     {
       "section": "area7",
       "name": "7A-22.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-22.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-22.jpg"
     },
     {
       "section": "area7",
       "name": "7A-23.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-23.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-23.jpg"
     },
     {
       "section": "area7",
       "name": "7A-24.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-24.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-24.jpg"
     },
     {
       "section": "area7",
       "name": "7A-25.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-25.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-25.jpg"
     },
     {
       "section": "area7",
       "name": "7A-26.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-26.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-26.jpg"
     },
     {
       "section": "area7",
       "name": "7A-27.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-27.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-27.jpg"
     },
     {
       "section": "area7",
       "name": "7A-28.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-28.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-28.jpg"
     },
     {
       "section": "area7",
       "name": "7A-29.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-29.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-29.jpg"
     },
     {
       "section": "area7",
       "name": "7A-30.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-30.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-30.jpg"
     },
     {
       "section": "area7",
       "name": "7A-31.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-31.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-31.jpg"
     },
     {
       "section": "area7",
       "name": "7A-32.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-32.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-32.jpg"
     },
     {
       "section": "area7",
       "name": "7A-33.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-33.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-33.jpg"
     },
     {
       "section": "area7",
       "name": "7A-34.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-34.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-34.jpg"
     },
     {
       "section": "area7",
       "name": "7A-35.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-35.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-35.jpg"
     },
     {
       "section": "area7",
       "name": "7A-36.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-36.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-36.jpg"
     },
     {
       "section": "area7",
       "name": "7A-37.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-37.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-37.jpg"
     },
     {
       "section": "area7",
       "name": "7A-38.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-38.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-38.jpg"
     },
     {
       "section": "area7",
       "name": "7A-39.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-39.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-39.jpg"
     },
     {
       "section": "area7",
       "name": "7A-40.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-40.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-40.jpg"
     },
     {
       "section": "area7",
       "name": "7A-41.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-41.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-41.jpg"
     },
     {
       "section": "area7",
       "name": "7A-42.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-42.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-42.jpg"
     },
     {
       "section": "area7",
       "name": "7A-43.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-43.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-43.jpg"
     },
     {
       "section": "area7",
       "name": "7A-44.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-44.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-44.jpg"
     },
     {
       "section": "area7",
       "name": "7A-45.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-45.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-45.jpg"
     },
     {
       "section": "area7",
       "name": "7A-46.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-46.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-46.jpg"
     },
     {
       "section": "area7",
       "name": "7A-47.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-47.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-47.jpg"
     },
     {
       "section": "area7",
       "name": "7A-48.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-48.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-48.jpg"
     },
     {
       "section": "area7",
       "name": "7A-49.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-49.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-49.jpg"
     },
     {
       "section": "area7",
       "name": "7A-50.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-50.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-50.jpg"
     },
     {
       "section": "area7",
       "name": "7A-51.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-51.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-51.jpg"
     },
     {
       "section": "area7",
       "name": "7A-52.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-52.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-52.jpg"
     },
     {
       "section": "area7",
       "name": "7A-53.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-53.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-53.jpg"
     },
     {
       "section": "area7",
       "name": "7A-54.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-54.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-54.jpg"
     },
     {
       "section": "area7",
       "name": "7A-55.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-55.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-55.jpg"
     },
     {
       "section": "area7",
       "name": "7A-56.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-56.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-56.jpg"
     },
     {
       "section": "area7",
       "name": "7A-57.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-57.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-57.jpg"
     },
     {
       "section": "area7",
       "name": "7A-58.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-58.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-58.jpg"
     },
     {
       "section": "area7",
       "name": "7A-59.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-59.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-59.jpg"
     },
     {
       "section": "area7",
       "name": "7A-60.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-60.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-60.jpg"
     },
     {
       "section": "area7",
       "name": "7A-61.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-61.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-61.jpg"
     },
     {
       "section": "area7",
       "name": "7A-62.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-62.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-62.jpg"
     },
     {
       "section": "area7",
       "name": "7A-63.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-63.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-63.jpg"
     },
     {
       "section": "area7",
       "name": "7A-64.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-64.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-64.jpg"
     },
     {
       "section": "area7",
       "name": "7A-65.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-65.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-65.jpg"
     },
     {
       "section": "area7",
       "name": "7A-66.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-66.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-66.jpg"
     },
     {
       "section": "area7",
       "name": "7A-67.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-67.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-67.jpg"
     },
     {
       "section": "area7",
       "name": "7A-68.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-68.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-68.jpg"
     },
     {
       "section": "area7",
       "name": "7A-69.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-69.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-69.jpg"
     },
     {
       "section": "area7",
       "name": "7A-70.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-70.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-70.jpg"
     },
     {
       "section": "area7",
       "name": "7A-71.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-71.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-71.jpg"
     },
     {
       "section": "area7",
       "name": "7A-72.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-72.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-72.jpg"
     },
     {
       "section": "area7",
       "name": "7A-73.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-73.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-73.jpg"
     },
     {
       "section": "area7",
       "name": "7A-74.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-74.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-74.jpg"
     },
     {
       "section": "area7",
       "name": "7A-75.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-75.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-75.jpg"
     },
     {
       "section": "area7",
       "name": "7A-76.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-76.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-76.jpg"
     },
     {
       "section": "area7",
       "name": "7A-77.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-77.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-77.jpg"
     },
     {
       "section": "area7",
       "name": "7A-78.jpg",
-      "url": "https://firebasestorage.googleapis.com/v0/b/cementeriojardinesdelapaz/o/360%2Farea7%2F7A-78.jpg?alt=media"
+      "url": "https://storage.googleapis.com/cementeriojardinesdelapaz/360/area7/7A-78.jpg"
     }
   ]
 }
